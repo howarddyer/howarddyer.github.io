@@ -15,8 +15,12 @@
 
       <nav class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li {% if page.title == "Home" %} class="active" {% endif %}><a href="/">Home</a></li>
-          <li {% if page.title == "About" %} class="active" {% endif %}><a href="/about">About</a></li>
+          {% assign pages = site.pages | sort:"position" %}
+          {% for my_page in pages %}
+            {% if my_page.title %}
+              <li {% if page.title == my_page.title %} class="active" {% endif %}><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </nav>
 
