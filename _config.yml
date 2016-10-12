@@ -8,7 +8,7 @@
 # Site settings
 title: Howard Dyer
 email: me@howard-dyer.co.uk
-description: "Graphic Designer and Front-End Developer"
+description: "Graphic Designer & Front-End Developer"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.howard-dyer.co.uk"
 twitter_username: howarddyer
