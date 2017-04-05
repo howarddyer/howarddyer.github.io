@@ -13,7 +13,12 @@
 
     <main class="primary">
       <div class="wrapper">
+        <header style="text-align: center;">
+          <h2>{{ page.title }}</h2>
+          <p class="info">{{ page.date | date_to_long_string }}</p>
+        </header>
         {{ content }}
+        
       </div>
     </main>
 

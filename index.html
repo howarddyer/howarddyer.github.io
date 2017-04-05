@@ -1,10 +1,36 @@
 ---
 layout: default
-title: Howard Dyer
 position: 10
 ---
 
-<img class="logo" src="static/images/logo-typog-howard-dyer-dark-blue.svg">
+<div style="margin: -8rem 0 4rem; text-align: center;">
+  <span class="label top">Notes</span>
+</div>
 
-<h1>Graphic Designer &amp; Front End Developer</h1>
-<p><a href="http://www.twitter.com/howarddyer" target="_blank">Come say hi!</a></p>
+<section class="post-container">
+  {% for post in paginator.posts %}
+  <article class="post">
+    <h2>
+      <a href="{{ post.url | prepend: site.baseurl }}" >
+        {{ post.title }}
+      </a>
+    </h2>
+    <p>{{ post.description }}</p>
+    <p class="info">{{ post.date | date_to_long_string }}</p>
+  </article>
+  {% endfor %}
+</section>
+
+<section class="pagination">
+
+  <p>
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}">Previous page</a>
+    {% endif %}
+    (Page {{ paginator.page }} of {{ paginator.total_pages }})
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}">Next page</a>
+    {% endif %}
+  </p>
+
+</section>
