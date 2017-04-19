@@ -15,7 +15,13 @@ position: 10
         {{ post.title }}
       </a>
     </h2>
-    <p>{{ post.description }}</p>
+    {% if post.description.nested %}
+      {% for nested in post.description.nested %}
+        <p>{{ nested.description }}</p>
+      {% endfor %}
+    {% else %}
+      <p>{{ post.description }}</p>
+    {% endif %}
     <p class="info">{{ post.date | date_to_long_string }}</p>
   </article>
   {% endfor %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to create command line directory shortcuts"
+title:  "Create command line directory shortcuts"
 date:   2015-05-15 00:44:53
 description: "A solution to quickly access frequently used locations in the command line."
 ---

@@ -6,7 +6,7 @@ description: "Helpful notes for using .htaccess."
 categories: htaccess apache url redirect
 ---
 
-<h3>Is .htaccess enabled?</h3>
+### Is .htaccess enabled?
 
 To test whether .htaccess is enabled on your web server, create two files with unique content and add the following to your .htaccess file (if the leftmost file is loaded, then .htaccess will be enabled):
 
@@ -14,7 +14,7 @@ To test whether .htaccess is enabled on your web server, create two files with u
 DirectoryIndex index_enabled.html index.html
 {% endhighlight %}
 
-<h3>Error pages</h3>
+### Error pages
 
 404 error — "page not found":
 
@@ -28,7 +28,7 @@ Redirect 404 /path/to/404-error-page.html
 Redirect 301 /path/to/old-page.html /path/to/new-page.html
 {% endhighlight %}
 
-<h3>Rewrite</h3>
+### Rewrite
 
 Redirect serves the browser a different URL to use, and the browser is aware of the redirect.
 Rewrite is a set of conditional rules that leaves the client's browser none the wiser of the rewrie (in contrast to Redirect's if EXACTLY THIS do EXACTLY THAT nature).
@@ -64,11 +64,7 @@ Set rules for search engine robots:
 </FilesMatch>
 {% endhighlight %}
 
-<hr>
+---
 
-[Apache HTTP server documentation][apache-htaccess-resource]
-
-[Google Robots Meta Tag][google-robots]
-
-[google-robots]: https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag
-[apache-htaccess-resource]: http://httpd.apache.org/docs/current/howto/htaccess.html
+<p><a href="https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag" target="_blank">Apache HTTP server</a></p>
+<p><a href="http://httpd.apache.org/docs/current/howto/htaccess.html" target="_blank">Google Robots Meta Tag</a></p>
