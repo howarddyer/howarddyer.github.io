@@ -2,7 +2,11 @@
 layout: post
 title:  "Create command line directory shortcuts"
 date:   2015-05-15 00:44:53
-description: "A solution to quickly access frequently used locations in the command line."
+description:
+  nested:
+    - description: "nano .bash_profile"
+    - description: "alias shortcutToMyDevFolder='cd /Path/To/My/Dev/Folder'"
+    - description: "source ~/.bash_profile"
 ---
 
 Open the .bash_profile file (at the root) for editing:
