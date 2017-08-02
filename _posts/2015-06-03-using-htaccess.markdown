@@ -64,7 +64,7 @@ Set rules for search engine robots:
 </FilesMatch>
 {% endhighlight %}
 
----
+### Further reading
 
 <p><a href="https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag" target="_blank">Apache HTTP server</a></p>
 <p><a href="http://httpd.apache.org/docs/current/howto/htaccess.html" target="_blank">Google Robots Meta Tag</a></p>

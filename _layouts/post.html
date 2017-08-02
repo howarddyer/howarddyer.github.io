@@ -5,24 +5,25 @@
 
   <body>
 
-    <header class="primary">
-      <div class="wrapper">
-        {% include header.html %}
-      </div>
+    <header class="site-header">
+      {% include header.html %}
     </header>
 
-    <main class="primary">
+    <main>
       <div class="wrapper">
-        <header style="text-align: center;">
-          <h2>{{ page.title }}</h2>
-          <p class="info">{{ page.date | date_to_long_string }}</p>
+        <header class="post-header--full">
+          <h2 class="post-title">{{ page.title }}</h2>
+          <p class="post-meta">{{ page.date | date_to_long_string }}</p>
         </header>
         {{ content }}
-        
+        <footer class="post-footer--full">
+          <a href="#" class="button">Back to top</a>
+          <a href="/" class="button">Back to Home</a>
+        </footer>
       </div>
     </main>
 
-    <footer class="primary">
+    <footer class="site-footer">
       {% include footer.html %}
     </footer>
 

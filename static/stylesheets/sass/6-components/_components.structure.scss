@@ -1,0 +1,21 @@
+.site-header {
+  background-image: url('/static/images/background-howard-dyer.svg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: $measure-large+$measure-regular $measure-xsmall $measure-large; // $measure-regular for background-image
+  text-align: center;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: $window-max;
+  width: 100%
+}
+
+.site-footer {
+  background-color: $darkblue;
+  border-top: solid $border-width-regular $grey;
+  padding: $measure-large $measure-xsmall $measure-large;
+  text-align: center;
+}

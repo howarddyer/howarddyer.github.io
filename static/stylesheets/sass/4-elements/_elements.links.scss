@@ -1,0 +1,16 @@
+a {
+
+  &:link,
+  &:visited {
+    color: $darkblue;
+  }
+
+  &:hover {
+    color: $orange;
+  }
+
+  &:hover svg {
+    fill: $orange;
+  }
+
+}

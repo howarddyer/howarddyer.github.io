@@ -1,0 +1,39 @@
+body {
+  color: $darkgrey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $darkblue;
+  font: $font-2-heading;
+  margin-bottom: $measure-small;
+}
+
+h1 {
+  color: $blue;
+}
+
+h3 {
+  font-size: $font-size-heading*.75;
+  margin-top: $measure-regular;
+}
+
+p {
+  @include word-wrap();
+  font: $font-1-body;
+  margin-bottom: $measure-small;
+}
+
+code {
+  font: $font-3-body;
+  color: $white;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+footer {
+  color: $white;
+}

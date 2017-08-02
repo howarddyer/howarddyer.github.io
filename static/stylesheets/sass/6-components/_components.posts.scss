@@ -1,0 +1,39 @@
+.post-container {
+  margin-top: $measure-regular;
+}
+
+.post--listed {
+  border-bottom: solid $border-width-small $grey;
+  clear: both;
+  margin-bottom: $measure-large;
+  padding-bottom: $measure-regular;
+  text-align: left;
+}
+
+.post-header--full {
+  border-bottom: solid $border-width-small $grey;
+  margin-bottom: $measure-large;
+  padding-bottom: $measure-regular;
+}
+
+.post-title {
+  font-size: $font-size-heading*1.5;
+  margin-bottom: $measure-small;
+}
+
+.post-meta {
+  color: $blue;
+  font: $font-2-body;
+  text-transform: uppercase;
+}
+
+.highlight {
+  margin: 0 0 $measure-small;
+  padding: $measure-xsmall;
+}
+
+.post-footer--full {
+  border-top: solid $border-width-small $grey;
+  margin-top: $measure-large;
+  padding-top: $measure-large;
+}

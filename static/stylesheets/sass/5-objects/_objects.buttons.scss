@@ -1,0 +1,16 @@
+.button {
+  background: $blue;
+  font: $font-2-body;
+  margin-right: $measure-small;
+  padding: $measure-xsmall;
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: $white;
+  }
+
+  &:hover {
+    background: $darkblue;
+  }
+}
