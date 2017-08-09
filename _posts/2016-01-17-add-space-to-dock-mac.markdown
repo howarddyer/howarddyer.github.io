@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Add a space to the dock in Mac OS"
+title:  "Add a Space to the Dock in Mac OS"
 date:   2016-01-17 17:54:56
 description:
   nested:
@@ -8,7 +8,7 @@ description:
     - description: "killall Finder"
 ---
 
-{% highlight shell %}
+``` shell
 defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile”;}'
 killall Dock
-{% endhighlight %}
+```

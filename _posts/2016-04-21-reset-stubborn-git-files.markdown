@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reset stubborn git files"
+title:  "Reset Stubborn Git Files"
 date:   2016-04-21 19:12:44
 description:
   nested:
@@ -8,7 +8,7 @@ description:
     - description: "git reset --hard"
 ---
 
-{% highlight shell %}
+``` shell
 git rm --cached -r .
 git reset --hard
-{% endhighlight %}
+```

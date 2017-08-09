@@ -10,23 +10,23 @@ categories: htaccess apache url redirect
 
 To test whether .htaccess is enabled on your web server, create two files with unique content and add the following to your .htaccess file (if the leftmost file is loaded, then .htaccess will be enabled):
 
-{% highlight -directives %}
+``` apache
 DirectoryIndex index_enabled.html index.html
-{% endhighlight %}
+```
 
 ### Error pages
 
 404 error — "page not found":
 
-{% highlight -directives %}
+``` apache
 Redirect 404 /path/to/404-error-page.html
-{% endhighlight %}
+```
 
 301 error — "moved permanently":
 
-{% highlight -directives %}
+``` apache
 Redirect 301 /path/to/old-page.html /path/to/new-page.html
-{% endhighlight %}
+```
 
 ### Rewrite
 
@@ -37,32 +37,32 @@ A Rewrite request is made up of two parts&mdash;RewriteCond and RewriteRule. Rew
 
 Replace non-canonical URLs with a canonical URL (this is actually processed as a 301 redirect):
 
-{% highlight -directives %}
+``` apache
 RewriteCond %{HTTP_HOST} !^www
 RewriteRule .* http://www.%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
-{% endhighlight %}
+```
 
 Remove any trailing slashes from the URL:
 
-{% highlight -directives %}
+``` apache
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)/$ /$1 [L,R=301]
-{% endhighlight %}
+```
 
 Remove index.html from the URL:
 
-{% highlight -directives %}
+``` apache
 RewriteCond %{REQUEST_URI} ^.*/index.html
 RewriteRule ^(.*)index.html$ /$1 [R=301,L]
-{% endhighlight %}
+```
 
 Set rules for search engine robots:
 
-{% highlight -directives %}
+``` apache
 <FilesMatch "sitemap\.xml">
   Header set X-Robots-Tag "noindex, nofollow"
 </FilesMatch>
-{% endhighlight %}
+```
 
 ### Further reading
 

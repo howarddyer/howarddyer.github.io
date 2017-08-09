@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Create command line directory shortcuts"
+title:  "Create Command Line Directory Shortcuts"
 date:   2015-05-15 00:44:53
 description:
   nested:
@@ -11,24 +11,24 @@ description:
 
 Open the .bash_profile file (at the root) for editing:
 
-{% highlight shell %}
+``` bash
 nano .bash_profile
-{% endhighlight %}
+```
 
 Add your alias:
 
-{% highlight -command-line %}
+``` bash
 alias shortcutToMyDevFolder='cd /Path/To/My/Dev/Folder'
-{% endhighlight %}
+```
 
 Save the file, and then refresh the shell:
 
-{% highlight -command-line %}
+``` bash
 source ~/.bash_profile
-{% endhighlight %}
+```
 
 Alternatively, symlimks can be created with the "ln" command (so that typing "cd shortcutToMyDevFolder" will do the same).
 
-{% highlight -command-line %}
+``` bash
 ln -s /Path/To/My/Dev/Folder shortcutToMyDevFolder
-{% endhighlight %}
+```

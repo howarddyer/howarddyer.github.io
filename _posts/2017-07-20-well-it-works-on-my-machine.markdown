@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Well, it work's on my machine..."
+title:  "Well, It Work's on My Machine..."
 date:   2017-07-28 12:55:00
 description: "I’ve heard this sentence many times working as a Front End Developer, and it’s one of those sentences that makes me cringe every time I hear it. The reasons for this can be summed up by discussing a few crucial factors to working in a team."
 ---
