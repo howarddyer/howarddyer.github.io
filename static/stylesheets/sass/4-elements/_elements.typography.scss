@@ -24,7 +24,13 @@ h3 {
 p {
   @include word-wrap();
   font: $font-1-body;
+  margin-bottom: $measure-xsmall;
+}
+
+ul {
+  font: $font-1-body;
   margin-bottom: $measure-small;
+  margin-left: $measure-small;
 }
 
 code {

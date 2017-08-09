@@ -15,8 +15,8 @@ twitter_username: howarddyer
 github_username:  howarddyer
 
 # Build settings
-markdown: kramdown
 highlighter: rouge
+
 exclude: ['*.css.map', '*.sass']
 
 # Outputting
