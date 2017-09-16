@@ -31,11 +31,11 @@ position: 10
 
   <p>
     {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="button" style="margin-right: 1rem;">Previous page</a>
+    <a href="{{ paginator.previous_page_path }}" class="button" style="margin-right: 1rem;">Newer notes</a>
     {% endif %}
     (Page {{ paginator.page }} of {{ paginator.total_pages }})
     {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="button" style="margin-left: 1rem;">Next page</a>
+    <a href="{{ paginator.next_page_path }}" class="button" style="margin-left: 1rem;">Older notes</a>
     {% endif %}
   </p>
 
