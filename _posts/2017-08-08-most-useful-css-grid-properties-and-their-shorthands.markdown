@@ -41,6 +41,24 @@ description: "If nothing else, ensure you learn how to use grid-template, grid-a
 }
 ```
 
+* grid-row-gap: \<gap-size>;
+* grid-column-gap: \<gap-size>;
+
+``` css
+.grid {
+  grid-row-gap: 10px;
+  grid-column-gap: 20px;
+}
+```
+
+**Shorthand:** grid-gap: \<grid-row-gap> \<grid-column-gap>;
+
+``` css
+.grid {
+  grid-gap: 10px 20px;
+}
+```
+
 **Note** the bracket syntax for line names and quotation syntax for area names.  
 
 ### Implicit grid properties
@@ -100,24 +118,6 @@ description: "If nothing else, ensure you learn how to use grid-template, grid-a
 ``` css
 .grid-item {
   grid-area: 2 / 1 / span 2 / 4;
-}
-```
-
-* grid-row-gap: \<gap-size>;
-* grid-column-gap: \<gap-size>;
-
-``` css
-.grid-item {
-  grid-row-gap: 10px;
-  grid-column-gap: 20px;
-}
-```
-
-**Shorthand:** grid-gap: \<grid-row-gap> \<grid-column-gap>;
-
-``` css
-.grid-item {
-  grid-gap: 10px 20px;
 }
 ```
 
