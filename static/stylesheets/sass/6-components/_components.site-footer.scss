@@ -1,0 +1,10 @@
+// ############################
+// Site footer
+// ############################
+
+.site-footer {
+    background-color: $darkblue;
+    border-top: solid $border-width-regular $grey;
+    padding: $measure-large $measure-xsmall $measure-large;
+    text-align: center;
+}

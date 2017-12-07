@@ -9,14 +9,14 @@
       {% include header.html %}
     </header>
 
-    <main>
+    <main class="post__item--full">
       <div class="wrapper">
-        <header class="post-header--full">
-          <h2 class="post-title">{{ page.title }}</h2>
-          <p class="post-meta">{{ page.date | date_to_long_string }}</p>
+        <header class="post__header">
+          <h2 class="post__title">{{ page.title }}</h2>
+          <p class="post__meta">{{ page.date | date_to_long_string }}</p>
         </header>
         {{ content }}
-        <footer class="post-footer--full">
+        <footer class="post__footer">
           <a href="#" class="button">Back to top</a>
           <a href="/" class="button">Back to Home</a>
         </footer>

@@ -1,25 +1,30 @@
-@import "1-settings/settings.colours";
-@import "1-settings/settings.fonts";
 @import "1-settings/settings.global";
-@import "1-settings/settings.objects";
+@import "1-settings/settings.colours";
+@import "1-settings/settings.components";
 @import "1-settings/settings.properties";
+@import "1-settings/settings.typography";
 
 @import "2-tools/tools.mixins";
 
-@import "3-generic/generic.base";
+@import "3-generic/generic.reset";
 
+@import "4-elements/elements.base";
 @import "4-elements/elements.links";
 @import "4-elements/elements.structure";
 @import "4-elements/elements.typography";
 
-@import "5-objects/objects.buttons";
-@import "5-objects/objects.images";
-@import "5-objects/objects.labels";
-@import "5-objects/objects.links";
+@import "5-objects/objects.logo";
+@import "5-objects/objects.wrapper";
 
+@import "6-components/components.buttons";
+@import "6-components/components.labels";
 @import "6-components/components.posts";
-@import "6-components/components.structure";
+@import "6-components/components.site-footer";
+@import "6-components/components.site-header";
+@import "6-components/components.social";
 @import "6-components/components.tech-specs";
 
 @import "7-overrides/overrides.code-highlighting";
-@import "7-overrides/overrides";
+@import "7-overrides/overrides.code";
+
+@import "8-utilities/utilities.misc";

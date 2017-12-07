@@ -3,13 +3,13 @@ layout: default
 position: 10
 ---
 
-<div class="label-container label-container--nudge-up">
-  <span class="label label--top">Notes</span>
+<div class="label__container label__container--nudge-up">
+  <span class="label__item label__item--top">Notes</span>
 </div>
 
-<section class="post-container">
+<section class="post__container">
   {% for post in paginator.posts %}
-  <article class="post--listed">
+  <article class="post__item--listed">
     <h2>
       <a href="{{ post.url | prepend: site.baseurl }}" >
         {{ post.title }}
@@ -22,7 +22,7 @@ position: 10
     {% else %}
       <p>{{ post.description }}</p>
     {% endif %}
-    <p class="post-meta">{{ post.date | date_to_long_string }}</p>
+    <p class="post__meta">{{ post.date | date_to_long_string }}</p>
   </article>
   {% endfor %}
 </section>

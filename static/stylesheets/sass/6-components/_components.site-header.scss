@@ -1,0 +1,12 @@
+// ############################
+// Site header
+// ############################
+
+.site-header {
+    background-image: url("/static/images/background-howard-dyer.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: $measure-large $measure-xsmall;
+    text-align: center;
+}

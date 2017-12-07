@@ -1,0 +1,19 @@
+// ############################
+// Social
+// ############################
+
+.social {
+    &__icon {
+        margin: 0 $measure-xsmall;
+        width: $social-icon-regular-width;
+        &--header {
+            fill: $darkblue;
+        }
+        &--footer {
+            fill: $white;
+        }
+    }
+    &__link {
+        text-decoration: none;
+    }
+}

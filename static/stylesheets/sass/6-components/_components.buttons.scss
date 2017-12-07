@@ -1,0 +1,20 @@
+// ############################
+// Buttons
+// ############################
+
+.button {
+    background: $blue;
+    font: $body-sans-serif-properties;
+    margin-right: $measure-small;
+    padding: $measure-small;
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+        color: $white;
+    }
+
+    &:hover {
+        background: $darkblue;
+    }
+}

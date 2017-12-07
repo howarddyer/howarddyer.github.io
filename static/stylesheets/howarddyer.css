@@ -1,16 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=Merriweather:300,700|Open+Sans:400,700);
-html {
-  font-size: 67.5%; }
-
-body {
-  margin: 0; }
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
+
+html {
+  font-size: 16px; }
+
+body {
+  margin: 0; }
 
 a:link, a:visited {
   color: #384F5B; }
@@ -23,29 +22,36 @@ a:hover svg {
 
 main {
   background-color: #EEE;
-  box-shadow: inset 0 0.5rem 0 #BBB;
-  padding: 6rem 1rem 6rem; }
+  box-shadow: inset 0 0.3125rem 0 #BBB;
+  padding: 3.75rem 0.625rem 3.75rem; }
 
 body {
   color: #777; }
 
-h1,
+h1 {
+  color: #608BA3;
+  font: 700 1.5625rem / 1.5 "Open Sans", Arial, sans-serif;
+  margin-bottom: 1.25rem; }
+
 h2,
 h3,
-h4,
-h5 {
+h4 {
   color: #384F5B;
-  font: 700 2.5rem / 1.5 "Open Sans", sans-serif;
-  margin-bottom: 2rem; }
+  margin-bottom: 1.25rem; }
 
-h1 {
-  color: #608BA3; }
+h2 {
+  font: 700 1.5625rem / 1.5 "Open Sans", Arial, sans-serif; }
 
 h3 {
-  font-size: 1.875rem;
-  margin-top: 4rem; }
+  font: 700 1.5625rem / 1.5 "Open Sans", Arial, sans-serif;
+  margin-top: 2.5rem; }
 
-p {
+h4 {
+  font: 700 1rem / 1.5 "Open Sans", Arial, sans-serif; }
+
+p,
+ul,
+code {
   -ms-hyphens: auto;
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
@@ -53,340 +59,335 @@ p {
   -ms-word-break: break-all;
   overflow-wrap: break-word;
   word-break: break-word;
-  word-wrap: break-word;
-  font: 300 1.5rem / 1.7 Merriweather, serif;
-  margin-bottom: 1rem; }
+  word-wrap: break-word; }
+
+p {
+  font: 400 1rem / 1.7 Merriweather, Arial, sans-serif;
+  margin-bottom: 0.625rem; }
 
 ul {
-  font: 300 1.5rem / 1.7 Merriweather, serif;
-  margin-bottom: 2rem;
-  margin-left: 2rem; }
+  font: 400 1rem / 1.7 Merriweather, Arial, sans-serif;
+  margin-bottom: 1.25rem;
+  margin-left: 1.25rem; }
 
 code {
-  font: 400 1.125rem / 1.7 "Courier New", monospace;
   color: #FFF;
-  text-align: left;
-  word-wrap: break-word; }
+  font: 400 1rem / 1.7 "Courier New", Arial, sans-serif;
+  text-align: left; }
 
 footer {
   color: #FFF; }
 
+.logo {
+  margin: 2.5rem 0;
+  max-width: 25rem; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 53.75rem;
+  width: 100%; }
+
 .button {
   background: #608BA3;
-  font: 400 1.5rem / 1.7 "Open Sans", sans-serif;
-  margin-right: 2rem;
-  padding: 2rem;
+  font: 400 1rem / 1.7 "Open Sans", Arial, sans-serif;
+  margin-right: 1.25rem;
+  padding: 1.25rem;
   text-decoration: none; }
   .button:link, .button:visited {
     color: #FFF; }
   .button:hover {
     background: #384F5B; }
 
-.logo {
-  margin-bottom: 4rem;
-  max-width: 50rem; }
-
-.social__icon {
-  margin: 0 1rem; }
-
-.social__icon--header {
-  fill: #384F5B;
-  width: 4rem; }
-
-.social__icon--footer {
-  fill: #FFF;
-  width: 3rem; }
-
-.label-container {
+.label__container {
   text-align: center; }
+  .label__container--nudge-up {
+    margin-top: -3.75rem; }
 
-.label-container--nudge-up {
-  margin-top: -6rem; }
-
-.label {
+.label__item {
   color: #FFF;
-  font: 400 1.5rem / 1.7 "Open Sans", sans-serif;
+  font: 400 1rem / 1.7 "Open Sans", Arial, sans-serif;
   display: inline-block;
-  padding: 1rem;
+  padding: 0.625rem;
   text-transform: uppercase; }
+  .label__item--top {
+    border-radius: 0 0 0.125rem 0.125rem;
+    -moz-border-radius: 0 0 0.125rem 0.125rem;
+    -webkit-border-radius: 0 0 0.125rem 0.125rem;
+    background-color: #777;
+    border-top: solid 0.3125rem #333;
+    box-shadow: 0 0.3125rem 0 #BBB; }
+  .label__item--bottom {
+    border-radius: 0.125rem 0.125rem 0 0;
+    -moz-border-radius: 0.125rem 0.125rem 0 0;
+    -webkit-border-radius: 0.125rem 0.125rem 0 0;
+    background-color: #608BA3;
+    box-shadow: 0-0.3125rem 0 #BBB; }
+  .label__item--link:hover {
+    background-color: #E8A78B; }
 
-.label--top {
-  border-radius: 0 0 0.25rem 0.25rem;
-  -moz-border-radius: 0 0 0.25rem 0.25rem;
-  -webkit-border-radius: 0 0 0.25rem 0.25rem;
-  background-color: #777;
-  border-top: solid 0.5rem #333;
-  box-shadow: 0 0.5rem 0 #BBB; }
+.post__container {
+  margin-top: 2.5rem; }
 
-.label--bottom {
-  border-radius: 0.25rem 0.25rem 0 0;
-  -moz-border-radius: 0.25rem 0.25rem 0 0;
-  -webkit-border-radius: 0.25rem 0.25rem 0 0;
-  background-color: #608BA3;
-  box-shadow: -0.5rem 0 #BBB; }
-
-.label--link:hover {
-  background-color: #E8A78B; }
-
-.social__link {
-  text-decoration: none; }
-
-.post-container {
-  margin-top: 4rem; }
-
-.post--listed {
-  border-bottom: solid 0.1rem #BBB;
+.post__item--listed {
+  border-bottom: solid 0.0625rem #BBB;
   clear: both;
-  margin-bottom: 6rem;
-  padding-bottom: 4rem;
+  margin-bottom: 3.75rem;
+  padding-bottom: 2.5rem;
   text-align: left; }
 
-.post-header--full {
-  border-bottom: solid 0.1rem #BBB;
-  margin-bottom: 6rem;
-  padding-bottom: 4rem; }
+.post__item--full .post__header {
+  border-bottom: solid 0.0625rem #BBB;
+  margin-bottom: 3.75rem;
+  padding-bottom: 2.5rem; }
 
-.post-title {
-  font-size: 3.75rem;
-  margin-bottom: 2rem; }
+.post__item--full .post__footer {
+  border-top: solid 0.0625rem #BBB;
+  margin-top: 3.75rem;
+  padding-top: 3.75rem; }
 
-.post-meta {
+.post__title {
+  font-size: 2.1875rem;
+  margin-bottom: 1.25rem; }
+
+.post__meta {
   color: #608BA3;
-  font: 400 1.5rem / 1.7 "Open Sans", sans-serif;
-  margin-top: 2rem;
+  font: 400 1rem / 1.7 "Open Sans", Arial, sans-serif;
+  margin-top: 1.25rem;
   text-transform: uppercase; }
 
-.highlight {
-  margin: 0 0 2rem;
-  padding: 1rem; }
-
-.post-footer--full {
-  border-top: solid 0.1rem #BBB;
-  margin-top: 6rem;
-  padding-top: 6rem; }
+.site-footer {
+  background-color: #384F5B;
+  border-top: solid 0.3125rem #BBB;
+  padding: 3.75rem 0.625rem 3.75rem;
+  text-align: center; }
 
 .site-header {
   background-image: url("/static/images/background-howard-dyer.svg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10rem 1rem 6rem;
+  padding: 3.75rem 0.625rem;
   text-align: center; }
 
-.wrapper {
-  margin: 0 auto;
-  max-width: 80rem;
-  width: 100%; }
+.social__icon {
+  margin: 0 0.625rem;
+  width: 1.875rem; }
+  .social__icon--header {
+    fill: #384F5B; }
+  .social__icon--footer {
+    fill: #FFF; }
 
-.site-footer {
-  background-color: #384F5B;
-  border-top: solid 0.5rem #BBB;
-  padding: 6rem 1rem 6rem;
-  text-align: center; }
+.social__link {
+  text-decoration: none; }
 
 .tech-specs p {
   color: #608BA3; }
   .tech-specs p:not(:last-child) {
     margin-bottom: 0; }
 
-pre.highlight, .highlight pre {
+pre.highlight,
+.highlight pre {
   background-color: #272822; }
 
 .highlight .hll {
-  background-color: #22282A; }
+  background-color: #22282a; }
 
 .highlight .c {
-  color: #99AA8A; }
+  color: #99aa8a; }
 
 .highlight .err {
   color: #960050;
   background-color: #1e0010; }
 
 .highlight .k {
-  color: #93C763; }
+  color: #93c763; }
 
 .highlight .l {
   color: #ae81ff; }
 
 .highlight .n {
-  color: #F1F2F3; }
+  color: #f1f2f3; }
 
 .highlight .o {
-  color: #E8E2B7; }
+  color: #e8e2b7; }
 
 .highlight .p {
-  color: #F1F2F3; }
+  color: #f1f2f3; }
 
 .highlight .ch {
-  color: #99AA8A; }
+  color: #99aa8a; }
 
 .highlight .cm {
-  color: #99AA8A; }
+  color: #99aa8a; }
 
 .highlight .cp {
-  color: #99AA8A; }
+  color: #99aa8a; }
 
 .highlight .cpf {
-  color: #99AA8A; }
+  color: #99aa8a; }
 
 .highlight .c1 {
-  color: #99AA8A; }
+  color: #99aa8a; }
 
 .highlight .cs {
-  color: #99AA8A; }
+  color: #99aa8a; }
 
 .highlight .gd {
-  color: #E8E2B7; }
+  color: #e8e2b7; }
 
 .highlight .ge {
   font-style: italic; }
 
 .highlight .gi {
-  color: #678CB1; }
+  color: #678cb1; }
 
 .highlight .gs {
   font-weight: bold; }
 
 .highlight .gu {
-  color: #99AA8A; }
+  color: #99aa8a; }
 
 .highlight .kc {
-  color: #93C763; }
+  color: #93c763; }
 
 .highlight .kd {
-  color: #93C763; }
+  color: #93c763; }
 
 .highlight .kn {
-  color: #E8E2B7; }
+  color: #e8e2b7; }
 
 .highlight .kp {
-  color: #93C763; }
+  color: #93c763; }
 
 .highlight .kr {
-  color: #93C763; }
+  color: #93c763; }
 
 .highlight .kt {
-  color: #83D8E1; }
+  color: #83d8e1; }
 
 .highlight .ld {
-  color: #EC7600; }
+  color: #ec7600; }
 
 .highlight .m {
-  color: #FFCD22; }
+  color: #ffcd22; }
 
 .highlight .s {
-  color: #EC7600; }
+  color: #ec7600; }
 
 .highlight .na {
-  color: #678CB1; }
+  color: #678cb1; }
 
 .highlight .nb {
-  color: #F1F2F3; }
+  color: #f1f2f3; }
 
 .highlight .nc {
-  color: #678CB1; }
+  color: #678cb1; }
 
 .highlight .no {
-  color: #93C763; }
+  color: #93c763; }
 
 .highlight .nd {
-  color: #678CB1; }
+  color: #678cb1; }
 
 .highlight .ni {
-  color: #F1F2F3; }
+  color: #f1f2f3; }
 
 .highlight .ne {
-  color: #678CB1; }
+  color: #678cb1; }
 
 .highlight .nf {
-  color: #678CB1; }
+  color: #678cb1; }
 
 .highlight .nl {
-  color: #F1F2F3; }
+  color: #f1f2f3; }
 
 .highlight .nn {
-  color: #F1F2F3; }
+  color: #f1f2f3; }
 
 .highlight .nx {
-  color: #678CB1; }
+  color: #678cb1; }
 
 .highlight .py {
-  color: #F1F2F3; }
+  color: #f1f2f3; }
 
 .highlight .nt {
-  color: #E8E2B7; }
+  color: #e8e2b7; }
 
 .highlight .nv {
-  color: #F1F2F3; }
+  color: #f1f2f3; }
 
 .highlight .ow {
-  color: #E8E2B7; }
+  color: #e8e2b7; }
 
 .highlight .w {
-  color: #F1F2F3; }
+  color: #f1f2f3; }
 
 .highlight .mb {
-  color: #FFCD22; }
+  color: #ffcd22; }
 
 .highlight .mf {
-  color: #FFCD22; }
+  color: #ffcd22; }
 
 .highlight .mh {
-  color: #FFCD22; }
+  color: #ffcd22; }
 
 .highlight .mi {
-  color: #FFCD22; }
+  color: #ffcd22; }
 
 .highlight .mo {
-  color: #FFCD22; }
+  color: #ffcd22; }
 
 .highlight .sb {
-  color: #EC7600; }
+  color: #ec7600; }
 
 .highlight .sc {
-  color: #EC7600; }
+  color: #ec7600; }
 
 .highlight .sd {
-  color: #EC7600; }
+  color: #ec7600; }
 
 .highlight .s2 {
-  color: #EC7600; }
+  color: #ec7600; }
 
 .highlight .se {
   color: #ae81ff; }
 
 .highlight .sh {
-  color: #EC7600; }
+  color: #ec7600; }
 
 .highlight .si {
-  color: #EC7600; }
+  color: #ec7600; }
 
 .highlight .sx {
-  color: #EC7600; }
+  color: #ec7600; }
 
 .highlight .sr {
-  color: #EC7600; }
+  color: #ec7600; }
 
 .highlight .s1 {
-  color: #EC7600; }
+  color: #ec7600; }
 
 .highlight .ss {
-  color: #EC7600; }
+  color: #ec7600; }
 
 .highlight .bp {
-  color: #F1F2F3; }
+  color: #f1f2f3; }
 
 .highlight .vc {
-  color: #F1F2F3; }
+  color: #f1f2f3; }
 
 .highlight .vg {
-  color: #F1F2F3; }
+  color: #f1f2f3; }
 
 .highlight .vi {
-  color: #F1F2F3; }
+  color: #f1f2f3; }
 
 .highlight .il {
-  color: #FFCD22; }
+  color: #ffcd22; }
+
+pre.highlight {
+  padding: 0.625rem;
+  margin-bottom: 1.25rem; }
 
 .no-margin {
   margin: 0; }

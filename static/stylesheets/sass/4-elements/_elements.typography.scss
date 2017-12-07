@@ -1,45 +1,60 @@
-body {
-  color: $darkgrey;
-}
+// ############################
+// Typography
+// ############################
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: $darkblue;
-  font: $font-2-heading;
-  margin-bottom: $measure-small;
+body {
+    color: $darkgrey;
 }
 
 h1 {
-  color: $blue;
+    color: $blue;
+    font: $h1-properties;
+    margin-bottom: $measure-small;
+}
+
+h2,
+h3,
+h4 {
+    color: $darkblue;
+    margin-bottom: $measure-small;
+}
+
+h2 {
+    font: $h2-properties;
 }
 
 h3 {
-  font-size: $font-size-heading*.75;
-  margin-top: $measure-regular;
+    font: $h3-properties;
+    margin-top: $measure-regular;
+}
+
+h4 {
+    font: $h4-properties;
+}
+
+p,
+ul,
+code {
+    @include word-wrap();
 }
 
 p {
-  @include word-wrap();
-  font: $font-1-body;
-  margin-bottom: $measure-xsmall;
+    font: $body-serif-properties;
+    margin-bottom: $measure-xsmall;
 }
 
 ul {
-  font: $font-1-body;
-  margin-bottom: $measure-small;
-  margin-left: $measure-small;
+    font: $body-serif-properties;
+    margin-bottom: $measure-small;
+    margin-left: $measure-small;
 }
 
 code {
-  font: $font-3-body;
-  color: $white;
-  text-align: left;
-  word-wrap: break-word;
+    color: $white;
+    font: $body-mono-properties;
+    text-align: left;
 }
 
 footer {
-  color: $white;
+    color: $white;
 }

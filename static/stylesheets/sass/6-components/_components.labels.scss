@@ -1,0 +1,36 @@
+// ############################
+// Labels
+// ############################
+
+.label {
+    &__container {
+        text-align: center;
+        &--nudge-up {
+            margin-top: -$measure-large; // subtract main padding
+        }
+    }
+
+    &__item {
+        color: $white;
+        font: $body-sans-serif-properties;
+        display: inline-block;
+        padding: $measure-xsmall;
+        text-transform: uppercase;
+        &--top {
+            @include border-radius(0, 0, $border-radius, $border-radius);
+            background-color: $darkgrey;
+            border-top: solid $border-width-regular $black;
+            box-shadow: 0 $border-width-regular 0 $grey;
+        }
+        &--bottom {
+            @include border-radius($border-radius, $border-radius, 0, 0);
+            background-color: $blue;
+            box-shadow: 0 -$border-width-regular 0 $grey;
+        }
+        &--link {
+            &:hover {
+                background-color: $orange;
+            }
+        }
+    }
+}

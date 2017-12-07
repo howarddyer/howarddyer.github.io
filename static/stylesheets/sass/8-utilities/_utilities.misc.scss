@@ -1,6 +1,7 @@
 // ############################
-// Global
+// Utilities
 // ############################
 
-$site-base: 16;
-$window-max: 860/$site-base + rem;
+.no-margin {
+    margin: 0;
+}

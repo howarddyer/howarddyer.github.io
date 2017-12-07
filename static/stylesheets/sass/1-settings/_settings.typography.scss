@@ -1,0 +1,46 @@
+// ############################
+// Fonts
+// ############################
+
+// Base properties
+
+$font-family-base: Arial, sans-serif;
+$font-size-base: $site-base + px;
+
+// Sized properties
+
+$font-family-sans-serif: "Open Sans", $font-family-base;
+$font-family-serif: Merriweather, $font-family-base;
+$font-family-mono: "Courier New", $font-family-base;
+
+$font-size-s: 1.125rem;
+$font-size-m: 1rem;
+$font-size-l: 1.5625rem; // 25px
+$font-size-xl: 2.1875rem; // 35px
+
+$font-weight-m: 400;
+$font-weight-l: 700;
+
+$font-line-height-m: 1.5;
+$font-line-height-l: 1.7;
+
+// Heading properties
+
+$heading-font-family: $font-family-sans-serif;
+$heading-font-weight: $font-weight-l;
+$heading-line-height: $font-line-height-m;
+
+$h1-properties: $heading-font-weight $font-size-l #{"/"} $heading-line-height $heading-font-family;
+$h2-properties: $heading-font-weight $font-size-l #{"/"} $heading-line-height $heading-font-family;
+$h3-properties: $heading-font-weight $font-size-l #{"/"} $heading-line-height $heading-font-family;
+$h4-properties: $heading-font-weight $font-size-m #{"/"} $heading-line-height $heading-font-family;
+
+// Body properties
+
+$body-serif-properties: $font-weight-m $font-size-m #{"/"} $font-line-height-l $font-family-serif;
+$body-sans-serif-properties: $font-weight-m $font-size-m #{"/"} $font-line-height-l $font-family-sans-serif;
+$body-mono-properties: $font-weight-m $font-size-m #{"/"} $font-line-height-l $font-family-mono;
+
+// Component properties
+
+$post-title-font-size: $font-size-xl;
