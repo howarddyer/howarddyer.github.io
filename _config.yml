@@ -27,4 +27,4 @@ paginate_path: "/page:num/"
 sass:
     sass_dir: static/stylesheets
 
-gems: [jekyll-coffeescript, jekyll-watch, jekyll-assets, jekyll-paginate]
+plugins: [jekyll-coffeescript, jekyll-watch, jekyll-assets, jekyll-paginate]
