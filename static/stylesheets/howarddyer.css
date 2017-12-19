@@ -11,6 +11,9 @@ html {
 body {
   margin: 0; }
 
+img {
+  margin-bottom: 1.25rem; }
+
 a:link, a:visited {
   color: #384F5B; }
 
@@ -49,18 +52,6 @@ h3 {
 h4 {
   font: 700 1rem / 1.5 "Open Sans", Arial, sans-serif; }
 
-p,
-ul,
-code {
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-  -ms-word-break: break-all;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  word-wrap: break-word; }
-
 p {
   font: 400 1rem / 1.7 Merriweather, Arial, sans-serif;
   margin-bottom: 0.625rem; }
@@ -71,8 +62,11 @@ ul {
   margin-left: 1.25rem; }
 
 code {
+  background-color: #272822;
   color: #FFF;
   font: 400 1rem / 1.7 "Courier New", Arial, sans-serif;
+  padding-left: 5px;
+  padding-right: 5px;
   text-align: left; }
 
 footer {
