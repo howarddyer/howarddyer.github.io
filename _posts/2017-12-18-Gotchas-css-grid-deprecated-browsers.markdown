@@ -5,7 +5,7 @@ date:   2017-12-19 20:50:00
 description: "CSS Grid is a modern technology for modern browsers. In an ideal world we would only develop for modern browsers, but there are (unfortunately) still many instances that call for the continued support of deprecated browsers."
 ---
 
-When using CSS Grid in IE10, IE11 and Edge (15 and below), implementation is based on the <a href="https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/" target="_blank">2011 implementation of CSS Grid specification</a>. There are a few things that need to be considered whenever support for those browsers is required.
+When using CSS Grid in IE10, IE11 and Edge (15 and below), implementation is based on the <a href="https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/" target="_blank">2011 implementation of CSS Grid</a>. There are a few things that need to be considered whenever support for those browsers is required.
 
 ### Gotcha 1: The repeat function
 
@@ -122,6 +122,6 @@ CSS Grid will really begin to shine when it is not held back by the limitations 
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_and_Progressive_Enhancement" target="_blank">List of prefixed CSS Grid properties, visit MDN Web Docs</a>
 
-<a href="https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/" target="_blank">2011 implementation of CSS Grid specification</a>
+<a href="https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/" target="_blank">2011 implementation of CSS Grid</a>
 
 <a href="https://www.w3.org/TR/css3-grid-layout/" target="_blank">Current implementation of CSS Grid</a>
