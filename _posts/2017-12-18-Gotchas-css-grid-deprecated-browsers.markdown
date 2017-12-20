@@ -57,7 +57,7 @@ To get around this, items must be placed manually using the prefixed property fo
 
 The "grid-column-gap", "grid-row-gap" and "grid-gap properties" can be used to add gutters between columns in a grid. For example, adding 20 pixel gutters to the grid in [Gotcha 1](#gotcha-1-the-repeat-function) and [Gotcha 2](#gotcha-2-autoplacement) would result in the following layout:
 
-![Using grid gap in CSS Grid, as per the 2011 CSS Grid implementation](/static/images/posts/2017-12-18-grid-gutter.png "Using grid gap in CSS Grid, as per the 2011 CSS Grid implementation")
+![Using grid gap in CSS Grid, as per the 2011 CSS Grid implementation](/static/images/posts/2017-12-18-grid-gap.png "Using grid gap in CSS Grid, as per the 2011 CSS Grid implementation")
 
 Unfortunately, these properties are not available in the 2011 implementation. A work around is to create extra columns using the prefixed property for "grid-template-columns" to act as gutters in deprecated browsers.
 
