@@ -67,7 +67,21 @@ code {
   font: 400 1rem / 1.7 "Courier New", Arial, sans-serif;
   padding-left: 5px;
   padding-right: 5px;
-  text-align: left; }
+  text-align: left;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  overflow-wrap: break-word;
+
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;}
 
 footer {
   color: #FFF; }
