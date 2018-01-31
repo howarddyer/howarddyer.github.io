@@ -12,7 +12,6 @@ body {
   margin: 0; }
 
 img {
-  max-width: 100%;
   margin-bottom: 1.25rem; }
 
 a:link, a:visited {
@@ -54,38 +53,58 @@ h4 {
   font: 700 1rem / 1.5 "Open Sans", Arial, sans-serif; }
 
 p {
-  font: 400 1rem / 1.7 Merriweather, Arial, sans-serif;
-  margin-bottom: 0.625rem; }
-
-ul {
-  font: 400 1rem / 1.7 Merriweather, Arial, sans-serif;
-  margin-bottom: 1.25rem;
-  margin-left: 1.25rem; }
-
-code {
-  background-color: #272822;
-  color: #FFF;
-  font: 400 1rem / 1.7 "Courier New", Arial, sans-serif;
-  padding-left: 5px;
-  padding-right: 5px;
-  text-align: left;
   -ms-hyphens: auto;
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
-
   -ms-word-break: break-all;
   word-break: break-all;
   word-break: break-word;
   overflow-wrap: break-word;
-
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;
   white-space: -pre-wrap;
-  white-space: -o-pre-wrap;}
+  white-space: -o-pre-wrap;
+  font: 400 1rem / 1.7 Merriweather, Arial, sans-serif;
+  margin-bottom: 0.625rem; }
 
-footer {
-  color: #FFF; }
+ul {
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  font: 400 1rem / 1.7 Merriweather, Arial, sans-serif;
+  margin-bottom: 1.25rem;
+  margin-left: 1.25rem; }
+
+blockquote {
+  font: 400 1rem / 1.7 Merriweather, Arial, sans-serif;
+  margin-bottom: 0.625rem; }
+
+code {
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  color: #FFF;
+  font: 400 1rem / 1.7 "Courier New", Arial, sans-serif;
+  text-align: left; }
 
 .logo {
   margin: 2.5rem 0;
@@ -167,6 +186,7 @@ footer {
 .site-footer {
   background-color: #384F5B;
   border-top: solid 0.3125rem #BBB;
+  color: white;
   padding: 3.75rem 0.625rem 3.75rem;
   text-align: center; }
 

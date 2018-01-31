@@ -32,29 +32,27 @@ h4 {
     font: $h4-properties;
 }
 
-p,
-ul,
-code {
-    @include word-wrap();
-}
-
 p {
+    @include word-wrap();
     font: $body-serif-properties;
     margin-bottom: $measure-xsmall;
 }
 
 ul {
+    @include word-wrap();
     font: $body-serif-properties;
     margin-bottom: $measure-small;
     margin-left: $measure-small;
 }
 
+blockquote {
+    font: $body-serif-properties;
+    margin-bottom: $measure-xsmall;
+}
+
 code {
+    @include word-wrap();
     color: $white;
     font: $body-mono-properties;
     text-align: left;
-}
-
-footer {
-    color: $white;
 }
