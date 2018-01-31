@@ -1,0 +1,27 @@
+// ############################
+// Labels
+// ############################
+
+.c-label {
+    text-align: center;
+
+
+    &__content {
+        @include border-radius(0, 0, $border-radius, $border-radius);
+        background-color: $darkgrey;
+        border-top: solid $border-width-regular $black;
+        box-shadow: 0 $border-width-regular 0 $grey;
+        color: $white;
+        font: $body-sans-serif-properties;
+        display: inline-block;
+        padding: $measure-xsmall;
+        text-transform: uppercase;
+
+    }
+
+    &--top {
+        margin-top: -$measure-large; // subtract main padding
+    }
+
+
+}

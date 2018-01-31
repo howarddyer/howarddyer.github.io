@@ -2,7 +2,8 @@
 // Buttons
 // ############################
 
-.button {
+.c-button {
+
     background: $blue;
     font: $body-sans-serif-properties;
     margin-right: $measure-small;
@@ -17,4 +18,5 @@
     &:hover {
         background: $darkblue;
     }
+    
 }

@@ -1,31 +1,31 @@
-@import "1-settings/settings.global";
-@import "1-settings/settings.colours";
-@import "1-settings/settings.components";
-@import "1-settings/settings.properties";
-@import "1-settings/settings.typography";
+@import "1-tools/mixins";
 
-@import "2-tools/tools.mixins";
+@import "2-settings/global";
+@import "2-settings/colours";
+@import "2-settings/components";
+@import "2-settings/properties";
+@import "2-settings/typography";
 
-@import "3-generic/generic.reset";
+@import "3-generic/reset";
 
-@import "4-elements/elements.base";
-@import "4-elements/elements.images";
-@import "4-elements/elements.links";
-@import "4-elements/elements.structure";
-@import "4-elements/elements.typography";
+@import "4-elements/base";
+@import "4-elements/images";
+@import "4-elements/links";
+@import "4-elements/structure";
+@import "4-elements/typography";
 
-@import "5-objects/objects.logo";
-@import "5-objects/objects.wrapper";
+@import "5-objects/wrapper";
 
-@import "6-components/components.buttons";
-@import "6-components/components.labels";
-@import "6-components/components.posts";
-@import "6-components/components.site-footer";
-@import "6-components/components.site-header";
-@import "6-components/components.social";
-@import "6-components/components.tech-specs";
+@import "6-components/buttons";
+@import "6-components/labels";
+@import "6-components/logo";
+@import "6-components/posts";
+@import "6-components/site-footer";
+@import "6-components/site-header";
+@import "6-components/social";
+@import "6-components/tech-specs";
 
-@import "7-overrides/overrides.code-highlighting";
-@import "7-overrides/overrides.code";
+@import "7-overrides/code-highlighting";
+@import "7-overrides/code";
 
-@import "8-utilities/utilities.misc";
+@import "8-utilities/misc";

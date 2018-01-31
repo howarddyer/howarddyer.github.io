@@ -61,10 +61,6 @@ p {
   word-break: break-all;
   word-break: break-word;
   overflow-wrap: break-word;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
   font: 400 1rem / 1.7 Merriweather, Arial, sans-serif;
   margin-bottom: 0.625rem; }
 
@@ -77,10 +73,6 @@ ul {
   word-break: break-all;
   word-break: break-word;
   overflow-wrap: break-word;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
   font: 400 1rem / 1.7 Merriweather, Arial, sans-serif;
   margin-bottom: 1.25rem;
   margin-left: 1.25rem; }
@@ -98,60 +90,46 @@ code {
   word-break: break-all;
   word-break: break-word;
   overflow-wrap: break-word;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
   color: #FFF;
   font: 400 1rem / 1.7 "Courier New", Arial, sans-serif;
   text-align: left; }
 
-.logo {
-  margin: 2.5rem 0;
-  max-width: 25rem; }
-
-.wrapper {
+.o-wrapper {
   margin: 0 auto;
   max-width: 53.75rem;
   width: 100%; }
 
-.button {
+.c-button {
   background: #608BA3;
   font: 400 1rem / 1.7 "Open Sans", Arial, sans-serif;
   margin-right: 1.25rem;
   padding: 1.25rem;
   text-decoration: none; }
-  .button:link, .button:visited {
+  .c-button:link, .c-button:visited {
     color: #FFF; }
-  .button:hover {
+  .c-button:hover {
     background: #384F5B; }
 
-.label__container {
+.c-label {
   text-align: center; }
-  .label__container--nudge-up {
-    margin-top: -3.75rem; }
-
-.label__item {
-  color: #FFF;
-  font: 400 1rem / 1.7 "Open Sans", Arial, sans-serif;
-  display: inline-block;
-  padding: 0.625rem;
-  text-transform: uppercase; }
-  .label__item--top {
+  .c-label__content {
     border-radius: 0 0 0.125rem 0.125rem;
     -moz-border-radius: 0 0 0.125rem 0.125rem;
     -webkit-border-radius: 0 0 0.125rem 0.125rem;
     background-color: #777;
     border-top: solid 0.3125rem #333;
-    box-shadow: 0 0.3125rem 0 #BBB; }
-  .label__item--bottom {
-    border-radius: 0.125rem 0.125rem 0 0;
-    -moz-border-radius: 0.125rem 0.125rem 0 0;
-    -webkit-border-radius: 0.125rem 0.125rem 0 0;
-    background-color: #608BA3;
-    box-shadow: 0-0.3125rem 0 #BBB; }
-  .label__item--link:hover {
-    background-color: #E8A78B; }
+    box-shadow: 0 0.3125rem 0 #BBB;
+    color: #FFF;
+    font: 400 1rem / 1.7 "Open Sans", Arial, sans-serif;
+    display: inline-block;
+    padding: 0.625rem;
+    text-transform: uppercase; }
+  .c-label--top {
+    margin-top: -3.75rem; }
+
+.c-logo {
+  margin: 2.5rem 0;
+  max-width: 25rem; }
 
 .post__container {
   margin-top: 2.5rem; }
