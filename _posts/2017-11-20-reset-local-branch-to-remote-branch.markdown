@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reset local branch to match remote repository"
+title:  "Reset Local Branch to Match Remote Repository"
 date:   2017-11-20 16:35:00
 description:
   nested:

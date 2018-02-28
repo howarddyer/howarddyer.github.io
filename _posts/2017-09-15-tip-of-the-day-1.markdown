@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tip of the Day: Be wary of chasing the new hotness"
+title:  "Tip of the Day: Be Wary of Chasing the New Hotness"
 date:   2017-09-15 13:33:00
 description: ""
 ---
