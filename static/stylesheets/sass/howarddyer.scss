@@ -1,10 +1,11 @@
-@import "1-tools/mixins";
+@import "1-settings/colours";
+@import "1-settings/global";
+@import "1-settings/images";
+@import "1-settings/typography";
+@import "1-settings/values";
 
-@import "2-settings/global";
-@import "2-settings/colours";
-@import "2-settings/components";
-@import "2-settings/properties";
-@import "2-settings/typography";
+@import "2-tools/functions";
+@import "2-tools/mixins";
 
 @import "3-generic/reset";
 
@@ -17,15 +18,13 @@
 @import "5-objects/wrapper";
 
 @import "6-components/buttons";
+@import "6-components/footer";
+@import "6-components/header";
 @import "6-components/labels";
 @import "6-components/logo";
 @import "6-components/posts";
-@import "6-components/site-footer";
-@import "6-components/site-header";
 @import "6-components/social";
 @import "6-components/tech-specs";
 
 @import "7-overrides/code-highlighting";
 @import "7-overrides/code";
-
-@import "8-utilities/misc";

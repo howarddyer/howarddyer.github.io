@@ -1,0 +1,35 @@
+// ############################
+// Fonts
+// ############################
+
+
+// Values
+
+$font-family-sans: "Open Sans", "sans-serif";
+$font-family-serif: Merriweather, "serif";
+$font-family-mono: "Courier New", "monospace";
+
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-25: 25px;
+$font-size-35: 35px;
+
+$font-weight-400: 400;
+$font-weight-700: 700;
+
+$font-line-height-1-5: 1.5;
+$font-line-height-l-7: 1.7;
+
+
+// Uses
+
+$font-size-s: $font-size-14;
+$font-size-m: $font-size-16;
+$font-size-l: $font-size-25;
+$font-size-xl: $font-size-35;
+
+$font-weight-m: $font-weight-400;
+$font-weight-l: $font-weight-700;
+
+$font-line-height-m: $font-line-height-1-5;
+$font-line-height-l: $font-line-height-l-7;

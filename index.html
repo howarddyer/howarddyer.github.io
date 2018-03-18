@@ -3,36 +3,31 @@ layout: default
 position: 10
 ---
 
-<!-- <div class="c-label c-label--nudge-up">
-  <span class="c-label__item c-label__item--top">Notes</span>
-</div> -->
-
 <div class="c-label c-label--top">
     <span class="c-label__content">Notes</span>
 </div>
 
-<section class="post__container">
-  {% for post in paginator.posts %}
-  <article class="post__item--listed">
-    <h2>
-      <a href="{{ post.url | prepend: site.baseurl }}" >
-        {{ post.title }}
-      </a>
-    </h2>
-    {% if post.description.nested %}
-      {% for nested in post.description.nested %}
-        <p>{{ nested.description }}</p>
-      {% endfor %}
-    {% else %}
-      <p>{{ post.description }}</p>
-    {% endif %}
-    <p class="post__meta">{{ post.date | date_to_long_string }}</p>
-  </article>
-  {% endfor %}
+<section>
+    {% for post in paginator.posts %}
+    <article class="c-post c-post--listed">
+        <h2>
+          <a href="{{ post.url | prepend: site.baseurl }}" >
+            {{ post.title }}
+          </a>
+        </h2>
+        {% if post.description.nested %}
+          {% for nested in post.description.nested %}
+            <p>{{ nested.description }}</p>
+          {% endfor %}
+        {% else %}
+          <p>{{ post.description }}</p>
+        {% endif %}
+        <p class="c-post__meta">{{ post.date | date_to_long_string }}</p>
+    </article>
+    {% endfor %}
 </section>
 
 <section class="pagination">
-
   <p>
     {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="c-button" style="margin-right: 1rem;">Newer notes</a>
@@ -42,5 +37,4 @@ position: 10
     <a href="{{ paginator.next_page_path }}" class="c-button" style="margin-left: 1rem;">Older notes</a>
     {% endif %}
   </p>
-
 </section>

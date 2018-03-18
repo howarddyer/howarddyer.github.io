@@ -2,12 +2,8 @@
 // Tech specs
 // ############################
 
-.tech-specs {
-    p {
-        color: $blue;
 
-        &:not(:last-child) {
-            margin-bottom: 0;
-        }
-    }
+.c-tech-specs {
+    color: $blue-l;
+    margin-bottom: $value-m;
 }

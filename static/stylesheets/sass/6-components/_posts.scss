@@ -2,43 +2,27 @@
 // Posts
 // ############################
 
-.post {
-    &__container {
-        margin-top: $measure-regular;
-    }
 
-    &__item {
-        &--listed {
-            border-bottom: solid $border-width-small $grey;
-            clear: both;
-            margin-bottom: $measure-large;
-            padding-bottom: $measure-regular;
-            text-align: left;
-        }
+.c-post {
 
-        &--full {
-            .post__header {
-                border-bottom: solid $border-width-small $grey;
-                margin-bottom: $measure-large;
-                padding-bottom: $measure-regular;
-            }
-            .post__footer {
-                border-top: solid $border-width-small $grey;
-                margin-top: $measure-large;
-                padding-top: $measure-large;
-            }
-        }
+    &__main {
+        margin-bottom: $value-xxl;
     }
 
     &__title {
-        font-size: $post-title-font-size;
-        margin-bottom: $measure-small;
+        @include px-rem-size("font-size", $font-size-xl);
+        color: $blue-d;
     }
 
     &__meta {
-        color: $blue;
-        font: $body-sans-serif-properties;
-        margin-top: $measure-small;
+        color: $blue-l;
+        font-family: $font-family-sans;
+        margin-bottom: $value-xxl;
         text-transform: uppercase;
     }
+
+    &:first-child {
+        margin-top: $value-l;
+    }
+
 }

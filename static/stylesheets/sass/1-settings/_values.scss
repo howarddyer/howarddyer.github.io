@@ -1,0 +1,37 @@
+// ############################
+// Values
+// ############################
+
+
+// Multi purpose
+
+$value-60: 60px; //xxl
+$value-50: 50px; //xl
+$value-40: 40px; //l
+$value-30: 30px; //ml
+$value-20: 20px; //m
+$value-10: 10px; //sm
+$value-5:   5px; //s
+$value-2:   2px; //xs
+$value-1:   1px; //xxs
+
+
+// Uses
+
+$value-xxl: $value-60;
+$value-xl:  $value-50;
+$value-l:   $value-40;
+$value-ml:  $value-30;
+$value-m:   $value-20;
+$value-sm:  $value-10;
+$value-s:   $value-5;
+$value-xs:  $value-2;
+$value-xxs: $value-1;
+
+
+// Specific
+
+$c-header-padding-top: 100px;
+$c-logo-width: 400px;
+$c-social-icon-width: 30px;
+$o-wrapper-padding-top-bottom: 60px;

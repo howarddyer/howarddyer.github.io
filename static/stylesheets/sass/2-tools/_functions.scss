@@ -1,0 +1,27 @@
+// ############################
+// Functions
+// ############################
+
+
+@function image($file) {
+  @return url($path-images + "/" + $file);
+}
+
+@function px-to-rem($pixels, $base: $site-base) {
+
+    @if not unitless($base) { $base: strip-unit($base); }
+    @if not unitless($pixels) { $pixels: strip-unit($pixels); }
+
+    @return #{$pixels/$base}rem;
+
+}
+
+@function strip-unit($value) {
+
+    @if type-of($value) == "number" and not unitless($value) {
+        @return $value / ($value * 0 + 1);
+    }
+
+    @return $value;
+
+}

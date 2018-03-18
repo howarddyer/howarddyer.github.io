@@ -4,6 +4,7 @@
 
 .o-wrapper {
     margin: 0 auto;
+    padding: $o-wrapper-padding-top-bottom $value-sm;
     max-width: $window-max;
     width: 100%;
 }

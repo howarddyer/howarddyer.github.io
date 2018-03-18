@@ -1,0 +1,20 @@
+// ############################
+// Global
+// ############################
+
+
+// Site
+
+$site-base: 16px;
+$window-max: 940px;
+
+
+// Paths
+
+$path-images: "/static/images" !default;
+
+
+// Media queries
+
+$retina-1: (-webkit-min-device-pixel-ratio: 2);
+$retina-2: (min-resolution: 192dpi);

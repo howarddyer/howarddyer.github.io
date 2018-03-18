@@ -2,18 +2,29 @@
 // Social
 // ############################
 
-.social {
+
+.c-social {
+
+    &__item {
+        text-decoration: none;
+        margin: 0 $value-sm;
+    }
+
     &__icon {
-        margin: 0 $measure-xsmall;
-        width: $social-icon-regular-width;
+        width: $c-social-icon-width;
+
         &--header {
-            fill: $darkblue;
+            fill: $blue-d;
         }
+
         &--footer {
             fill: $white;
         }
+
+        &:hover {
+            fill: $orange;
+        }
+
     }
-    &__link {
-        text-decoration: none;
-    }
+
 }

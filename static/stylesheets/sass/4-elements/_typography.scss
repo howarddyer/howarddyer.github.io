@@ -2,57 +2,89 @@
 // Typography
 // ############################
 
-body {
-    color: $darkgrey;
-}
 
 h1 {
-    color: $blue;
-    font: $h1-properties;
-    margin-bottom: $measure-small;
+    @include px-rem-size("font-size", $font-size-l);
+    color: $blue-l;
+    font-family: $font-family-sans;
+    margin-bottom: $value-m;
+}
+
+h2 {
+    @include px-rem-size("font-size", $font-size-l);
+    font-family: $font-family-sans;
+}
+
+ul {
+    margin-left: $value-m;
 }
 
 h2,
 h3,
-h4 {
-    color: $darkblue;
-    margin-bottom: $measure-small;
-}
-
-h2 {
-    font: $h2-properties;
-}
-
-h3 {
-    font: $h3-properties;
-    margin-top: $measure-regular;
-}
-
-h4 {
-    font: $h4-properties;
-}
-
+ul,
 p {
-    @include word-wrap();
-    font: $body-serif-properties;
-    margin-bottom: $measure-xsmall;
+    margin-bottom: $value-sm;
 }
 
-ul {
-    @include word-wrap();
-    font: $body-serif-properties;
-    margin-bottom: $measure-small;
-    margin-left: $measure-small;
-}
-
-blockquote {
-    font: $body-serif-properties;
-    margin-bottom: $measure-xsmall;
+pre {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
 }
 
 code {
-    @include word-wrap();
-    color: $white;
-    font: $body-mono-properties;
-    text-align: left;
+    font-family: $font-family-mono;
 }
+
+// h1 {
+//     color: $blue;
+//     font: $h1-properties;
+//     margin-bottom: $measure-small;
+// }
+//
+// h2,
+// h3,
+// h4 {
+//     color: $darkblue;
+//     margin-bottom: $measure-small;
+// }
+//
+// h2 {
+//     font: $h2-properties;
+// }
+//
+// h3 {
+//     font: $h3-properties;
+//     margin-top: $measure-regular;
+// }
+//
+// h4 {
+//     font: $h4-properties;
+// }
+//
+// p {
+//     @include word-wrap();
+//     font: $body-serif-properties;
+//     margin-bottom: $measure-xsmall;
+// }
+//
+// ul {
+//     @include word-wrap();
+//     font: $body-serif-properties;
+//     margin-bottom: $measure-small;
+//     margin-left: $measure-small;
+// }
+//
+// blockquote {
+//     font: $body-serif-properties;
+//     margin-bottom: $measure-xsmall;
+// }
+//
+// code {
+//     @include word-wrap();
+//     color: $white;
+//     font: $body-mono-properties;
+//     text-align: left;
+// }

@@ -2,10 +2,18 @@
 // Base
 // ############################
 
+
 html {
-    font-size: $font-size-base;
+    background-color: $grey-xxl;
+    height: 100%;
 }
 
 body {
-    margin: 0;
+    @include word-wrap();
+    height: 100%;
+    color: $grey-d;
+    font-family: $font-family-serif;
+    font-size: $site-base;
+    font-weight: $font-weight-m;
+    line-height: $font-line-height-l;
 }

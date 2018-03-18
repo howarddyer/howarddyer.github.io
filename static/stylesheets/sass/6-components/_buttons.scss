@@ -2,12 +2,13 @@
 // Buttons
 // ############################
 
+
 .c-button {
 
-    background: $blue;
-    font: $body-sans-serif-properties;
-    margin-right: $measure-small;
-    padding: $measure-small;
+    background-color: $blue-l;
+    display: inline-block;
+    margin-right: $value-s;
+    padding: $value-m;
     text-decoration: none;
 
     &:link,
@@ -16,7 +17,7 @@
     }
 
     &:hover {
-        background: $darkblue;
+        background-color: $blue-d;
     }
-    
+
 }

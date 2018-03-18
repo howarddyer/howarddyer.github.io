@@ -5,25 +5,23 @@
 
   <body>
 
-    <header class="site-header">
+    <header class="c-header">
       {% include header.html %}
     </header>
 
-    <main class="post__item--full">
-      <div class="o-wrapper">
-        <header class="post__header">
-          <h2 class="post__title">{{ page.title }}</h2>
-          <p class="post__meta">{{ page.date | date_to_long_string }}</p>
-        </header>
-        {{ content }}
-        <footer class="post__footer">
-          <a href="#" class="c-button">Back to top</a>
-          <a href="/" class="c-button">Back to Home</a>
-        </footer>
-      </div>
+    <main class="c-post">
+        <div class="o-wrapper">
+            <h2 class="c-post__title">{{ page.title }}</h2>
+            <p class="c-post__meta">{{ page.date | date_to_long_string }}</p>
+            <section class="c-post__main">
+                {{ content }}
+            </section>
+            <a href="#" class="c-button">Back to top</a>
+            <a href="/" class="c-button">Back to Home</a>
+        </div>
     </main>
 
-    <footer class="site-footer">
+    <footer class="c-footer">
       {% include footer.html %}
     </footer>
 

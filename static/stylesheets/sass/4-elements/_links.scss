@@ -3,16 +3,14 @@
 // ############################
 
 a {
+    
     &:link,
     &:visited {
-        color: $darkblue;
+        color: $blue-d;
     }
 
     &:hover {
         color: $orange;
     }
 
-    &:hover svg {
-        fill: $orange;
-    }
 }
