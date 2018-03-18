@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Tip of the Day: Humility Is Recognising Your Opportunities for Growth"
+title:  "Humility Is Recognising Your Opportunities for Growth"
 date:   2018-01-23 17:25:00
+label: quote
 ---
 
 <blockquote cite="https://spec.fm/podcasts/developer-tea/86023">

@@ -6,6 +6,7 @@ description:
   nested:
     - description: "defaults write com.apple.dock persistent-apps -array-add &#39;{&#34;tile-type&#34;=&#34;spacer-tile&#34;;}&#39;"
     - description: "killall Finder"
+label: note
 ---
 
 ``` shell

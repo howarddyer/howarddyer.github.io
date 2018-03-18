@@ -3,7 +3,7 @@ layout: post
 title:  "Using .htaccess"
 date:   2015-06-03 00:44:53
 description: "Helpful notes for using .htaccess."
-categories: htaccess apache url redirect
+label: note
 ---
 
 ### Is .htaccess enabled?

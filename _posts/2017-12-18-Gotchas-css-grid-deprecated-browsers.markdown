@@ -3,6 +3,7 @@ layout: post
 title:  "Gotchas When Implementing CSS Grid in Deprecated Browsers"
 date:   2017-12-19 20:50:00
 description: "CSS Grid is a modern technology for modern browsers. In an ideal world we would only develop for modern browsers, but there are (unfortunately) still many instances that call for the continued support of deprecated browsers."
+label: note
 ---
 
 When using CSS Grid in IE10, IE11 and Edge (15 and below), implementation is based on the <a href="https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/" target="_blank">2011 implementation of CSS Grid</a>. There are a few things that need to be considered whenever support for those browsers is required.

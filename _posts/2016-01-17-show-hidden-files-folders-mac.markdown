@@ -6,6 +6,7 @@ description:
   nested:
     - description: "defaults write com.apple.finder AppleShowAllFiles -boolean true"
     - description: "killall Finder"
+label: note
 ---
 
 ``` shell

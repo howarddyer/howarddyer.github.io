@@ -3,7 +3,8 @@
 // ############################
 
 a {
-    
+    transition: all .2s cubic-bezier(.4, 1, .1, 1);
+
     &:link,
     &:visited {
         color: $blue-d;

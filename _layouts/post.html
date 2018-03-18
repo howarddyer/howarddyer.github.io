@@ -6,11 +6,13 @@
   <body>
 
     <header class="c-header">
-      {% include header.html %}
+        <div class="o-wrapper u-space-bottom-p-none">
+            {% include header.html %}
+        </div>
     </header>
 
-    <main class="c-post">
-        <div class="o-wrapper">
+    <div class="o-wrapper">
+        <main class="c-post c-post--full">
             <h2 class="c-post__title">{{ page.title }}</h2>
             <p class="c-post__meta">{{ page.date | date_to_long_string }}</p>
             <section class="c-post__main">
@@ -18,11 +20,11 @@
             </section>
             <a href="#" class="c-button">Back to top</a>
             <a href="/" class="c-button">Back to Home</a>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <footer class="c-footer">
-      {% include footer.html %}
+        {% include footer.html %}
     </footer>
 
   </body>

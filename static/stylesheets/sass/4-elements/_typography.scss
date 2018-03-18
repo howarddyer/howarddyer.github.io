@@ -12,6 +12,7 @@ h1 {
 
 h2 {
     @include px-rem-size("font-size", $font-size-l);
+    // color: $blue-l;
     font-family: $font-family-sans;
 }
 
@@ -37,54 +38,3 @@ pre {
 code {
     font-family: $font-family-mono;
 }
-
-// h1 {
-//     color: $blue;
-//     font: $h1-properties;
-//     margin-bottom: $measure-small;
-// }
-//
-// h2,
-// h3,
-// h4 {
-//     color: $darkblue;
-//     margin-bottom: $measure-small;
-// }
-//
-// h2 {
-//     font: $h2-properties;
-// }
-//
-// h3 {
-//     font: $h3-properties;
-//     margin-top: $measure-regular;
-// }
-//
-// h4 {
-//     font: $h4-properties;
-// }
-//
-// p {
-//     @include word-wrap();
-//     font: $body-serif-properties;
-//     margin-bottom: $measure-xsmall;
-// }
-//
-// ul {
-//     @include word-wrap();
-//     font: $body-serif-properties;
-//     margin-bottom: $measure-small;
-//     margin-left: $measure-small;
-// }
-//
-// blockquote {
-//     font: $body-serif-properties;
-//     margin-bottom: $measure-xsmall;
-// }
-//
-// code {
-//     @include word-wrap();
-//     color: $white;
-//     font: $body-mono-properties;
-//     text-align: left;
-// }

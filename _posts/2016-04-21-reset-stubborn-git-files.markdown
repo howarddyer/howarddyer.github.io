@@ -6,6 +6,7 @@ description:
   nested:
     - description: "git rm --cached -r ."
     - description: "git reset --hard"
+label: note
 ---
 
 ``` shell

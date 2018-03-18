@@ -7,6 +7,7 @@ description:
     - description: "nano .bash_profile"
     - description: "alias shortcutToMyDevFolder='cd /Path/To/My/Dev/Folder'"
     - description: "source ~/.bash_profile"
+label: note
 ---
 
 Open the .bash_profile file (at the root) for editing:

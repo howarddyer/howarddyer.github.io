@@ -14,15 +14,17 @@
         width: $c-social-icon-width;
 
         &--header {
-            fill: $blue-d;
+            fill: $blue-l;
+            &:hover {
+                fill: $blue-d;
+            }
         }
 
         &--footer {
             fill: $white;
-        }
-
-        &:hover {
-            fill: $orange;
+            &:hover {
+                fill: $blue-l;
+            }
         }
 
     }

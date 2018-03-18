@@ -3,6 +3,7 @@ layout: post
 title:  "HTML5 Page Template"
 date:   2018-02-28 17:00:00
 description: "A basic HTML5 page template to quick-start projects."
+label: note
 ---
 
 ``` html

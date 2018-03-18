@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Tip of the Day: Be Wary of Chasing the New Hotness"
+title:  "Be Wary of Chasing the New Hotness"
 date:   2017-09-15 13:33:00
 description: ""
+label: quote
 ---
 
 <blockquote cite="https://spec.fm/podcasts/developer-tea/79763">

@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    @include word-wrap();
+    // @include word-wrap();
     height: 100%;
     color: $grey-d;
     font-family: $font-family-serif;

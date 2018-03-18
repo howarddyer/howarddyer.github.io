@@ -6,6 +6,7 @@ description:
   nested:
     - description: "git fetch origin"
     - description: "git reset --hard origin/master"
+label: note
 ---
 
 ``` shell

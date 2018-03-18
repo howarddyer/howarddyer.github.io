@@ -6,17 +6,19 @@
   <body>
 
     <header class="c-header">
-      {% include header.html %}
+        <div class="o-wrapper u-space-bottom-p-none">
+            {% include header.html %}
+        </div>
     </header>
 
     <main>
-      <div class="o-wrapper">
-        {{ content }}
-      </div>
+        <div class="o-wrapper">
+            {{ content }}
+        </div>
     </main>
 
     <footer class="c-footer">
-      {% include footer.html %}
+        {% include footer.html %}
     </footer>
 
   </body>
