@@ -4,8 +4,17 @@
 
 
 .c-post {
+
+    $post-types :
+        ('--type-1', #{$blue-l}),
+        ('--type-2', #{$orange}),
+        ('--type-3', #{$green});
+
     background-color: $white;
-    box-shadow: 0 $value-s $value-s 0 $grey-xl;
+    border-color: $blue-l;
+    border-top-style: solid;
+    border-top-width: $value-s;
+    box-shadow: 0 $value-xs $value-s 0 $grey-xl;
     display: block;
     padding: $value-m;
 
@@ -15,83 +24,59 @@
 
     &__title {
         color: $blue-l;
+        margin-bottom: $value-sm;
     }
 
     &__meta {
-        color: $grey-xl;
+        color: $grey-l;
+        margin-bottom: 0;
     }
 
     &__label {
         @include px-rem-size("font-size", $font-size-s);
-        background-color: $blue-l;
-        color: white;
+        border-color: $grey-l;
+        border-style: solid;
+        border-width: $value-xs;
+        color: $grey-l;
         float: right;
-        font-family: $font-family-sans;
-        font-weight: $font-weight-l;
         margin-left: $value-m;
         padding: $value-s $value-sm;
     }
 
-    &--full {
-        border-top: solid $value-s $blue-l;
-
-        .c-post__title {
-            @include px-rem-size("font-size", $font-size-xl);
-            line-height: $font-line-height-s;
+    @each $type in $post-types {
+        &#{nth($type, 1)} {
+            border-color: #{nth($type, 2)};
+            &:hover {
+                background: #{nth($type, 2)};
+                .c-post__label {
+                    background: #{nth($type, 2)};
+                    border-color: $white;
+                    color: $white;
+                }
+                * {
+                    color: $white;
+                }
+            }
         }
-        .c-post__meta {
-            margin-bottom: $value-l;
-        }
-
     }
 
-    &--listed {
+
+    &--brief {
         margin-bottom: $value-l;
         text-decoration: none;
 
-        &:nth-child(3n+1) {
-            border-top: solid $value-s $blue-l;
-            &:hover {
-                background: $blue-l;
-                .c-post__label {
-                    background: white;
-                    color: $blue-l;
-                }
-            }
+        .c-post__title {
+            text-decoration: underline;
         }
+    }
 
-        &:nth-child(3n+2) {
-            border-top: solid $value-s $orange;
-            .c-post__label {
-                background: $orange;
-            }
-            &:hover {
-                background: $orange;
-                .c-post__label {
-                    background: white;
-                    color: $orange;
-                }
-            }
+    &--full {
+
+        .c-post__title {
+            @include px-rem-size("font-size", $font-size-xl);
         }
-
-        &:nth-child(3n+3) {
-            border-top: solid $value-s $green;
-            .c-post__label {
-                background: $green;
-            }
-            &:hover {
-                background: $green;
-                .c-post__label {
-                    background: white;
-                    color: $green;
-                }
-            }
-        }
-
-        &:hover {
-            * {
-                color: white;
-            }
+        .c-post__meta {
+            margin-bottom: $value-l;
         }
 
     }
