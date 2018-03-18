@@ -46,7 +46,8 @@
     @each $type in $post-types {
         &#{nth($type, 1)} {
             border-color: #{nth($type, 2)};
-            &:hover {
+            &:hover,
+            &:focus {
                 background: #{nth($type, 2)};
                 .c-post__label {
                     background: #{nth($type, 2)};

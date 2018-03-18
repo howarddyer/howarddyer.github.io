@@ -16,7 +16,8 @@
         color: $white;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: $blue-d;
     }
 

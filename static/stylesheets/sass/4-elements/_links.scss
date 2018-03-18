@@ -10,7 +10,8 @@ a {
         color: $blue-d;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $orange;
     }
 

@@ -4,10 +4,16 @@
 
 
 .c-social {
+    margin-bottom: $value-s;
 
     &__item {
+        display: inline-block;
+        height: $c-social-icon-width;
+        position: relative;
         text-decoration: none;
         margin: 0 $value-sm;
+        width: $c-social-icon-width;
+
     }
 
     &__icon {
@@ -15,17 +21,37 @@
 
         &--header {
             fill: $blue-l;
-            &:hover {
+            &:hover,
+            :focus & {
                 fill: $blue-d;
             }
         }
 
         &--footer {
             fill: $white;
-            &:hover {
+            &:hover,
+            :focus & {
                 fill: $blue-l;
             }
         }
+
+        &:hover {
+            animation: rotate .2s linear forwards;
+        }
+
+        @include keyframes-prefix(rotate) {
+            25% {
+                @include rotate-prefix(-10deg)
+            }
+            50% {
+                @include rotate-prefix(10deg)
+                filter: blur(1px);
+            }
+            75% {
+                @include rotate-prefix(-10deg)
+            }
+        }
+
 
     }
 

@@ -5,5 +5,8 @@
 
 .c-tech-specs {
     color: $blue-l;
-    margin-bottom: $value-m;
+    margin-bottom: $value-l;
+    *:not(:last-child) {
+        margin-bottom: 0;
+    }
 }
