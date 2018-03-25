@@ -4,6 +4,9 @@
 
 
 .c-social {
+
+    $self: &;
+
     margin-bottom: $value-s;
 
     &__item {
@@ -18,22 +21,6 @@
 
     &__icon {
         width: $c-social-icon-width;
-
-        &--header {
-            fill: $blue-l;
-            &:hover,
-            :focus & {
-                fill: $blue-d;
-            }
-        }
-
-        &--footer {
-            fill: $white;
-            &:hover,
-            :focus & {
-                fill: $blue-l;
-            }
-        }
 
         &:hover {
             animation: rotate .2s linear forwards;
@@ -52,6 +39,19 @@
             }
         }
 
+        #{ $self }--header & {
+            fill: $blue-l;
+            &:hover {
+                fill: $blue-d;
+            }
+        }
+
+        #{ $self }--footer & {
+            fill: $white;
+            &:hover {
+                fill: $blue-l;
+            }
+        }
 
     }
 

@@ -5,6 +5,7 @@
 
 .c-post {
 
+    $self: &;
     $post-types :
         ('--type-1', #{$blue-l}),
         ('--type-2', #{$orange}),
@@ -25,11 +26,23 @@
     &__title {
         color: $blue-l;
         margin-bottom: $value-sm;
+
+        #{ $self }--brief & {
+            text-decoration: underline;
+        }
+
+        #{ $self }--full & {
+            @include px-rem-size("font-size", $font-size-xl);
+        }
     }
 
     &__meta {
         color: $grey-l;
         margin-bottom: 0;
+
+        #{ $self }--full & {
+            margin-bottom: $value-l;
+        }
     }
 
     &__label {
@@ -41,6 +54,19 @@
         float: right;
         margin-left: $value-m;
         padding: $value-s $value-sm;
+
+        @each $type in $post-types {
+            #{ $self }#{nth($type, 1)} & {
+                background: #{nth($type, 2)};
+                border-color: $white;
+                color: $white;
+            }
+        }
+    }
+
+    &--brief {
+        margin-bottom: $value-l;
+        text-decoration: none;
     }
 
     @each $type in $post-types {
@@ -49,37 +75,12 @@
             &:hover,
             &:focus {
                 background: #{nth($type, 2)};
-                .c-post__label {
-                    background: #{nth($type, 2)};
-                    border-color: $white;
-                    color: $white;
-                }
+
                 * {
                     color: $white;
                 }
             }
         }
-    }
-
-
-    &--brief {
-        margin-bottom: $value-l;
-        text-decoration: none;
-
-        .c-post__title {
-            text-decoration: underline;
-        }
-    }
-
-    &--full {
-
-        .c-post__title {
-            @include px-rem-size("font-size", $font-size-xl);
-        }
-        .c-post__meta {
-            margin-bottom: $value-l;
-        }
-
     }
 
 }
