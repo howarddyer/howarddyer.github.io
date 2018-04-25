@@ -42,7 +42,9 @@ h2 {
 h3 {
   margin-top: 40px; }
 
-ul {
+ul,
+ol {
+  margin-bottom: 40px;
   margin-left: 20px; }
 
 h2,

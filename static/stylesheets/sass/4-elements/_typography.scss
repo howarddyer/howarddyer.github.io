@@ -20,7 +20,9 @@ h3 {
     margin-top: $value-l;
 }
 
-ul {
+ul,
+ol {
+    margin-bottom: $value-l;
     margin-left: $value-m;
 }
 
