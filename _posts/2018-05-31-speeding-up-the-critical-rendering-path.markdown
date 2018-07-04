@@ -8,7 +8,7 @@ label: post
 
 ### Introduction
 
-I recently did a talk at my place of work on the process that the browser goes through to render a page, following a subject that I've recently been researching. Part of the talk is summed up in my previous post "Browser Rendering or: How I Learned to Stop Wondering and Understand the CSSOM".
+I recently did a talk at my place of work on the process that the browser goes through to render a page, following a subject that I've recently been researching. Part of the talk is summed up in my previous post <a href="http://howard-dyer.co.uk/browser-rendering-or-how-i-learned-to-stop-wondering-and-understand-the-cssom.html" target="_blank">Browser Rendering or: How I Learned to Stop Wondering and Understand the CSSOM</a>.
 
 In the talk I highlighted how a web developer could use this knowledge to implement improvements to the Critical Rendering Path (CRP). The CRP is the steps that a browsers need to take before any visual change can be shown to the user.
 
