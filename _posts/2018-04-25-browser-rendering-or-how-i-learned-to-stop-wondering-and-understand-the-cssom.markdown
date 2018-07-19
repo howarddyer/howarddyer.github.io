@@ -42,6 +42,10 @@ Having a more in-depth understanding of how the actually browser renders content
 
 ### Further Reading
 
+<a href="http://howard-dyer.co.uk/speeding-up-the-critical-rendering-path.html" target="_blank">Speeding Up the Critical Rendering Path — Howard Dyer</a>
+
+<a href="http://howard-dyer.co.uk/improving-the-render.html" target="_blank">Improving the Render — Howard Dyer</a>
+
 <a href="http://www.aimeemarieknight.com/It's-Not-Dark-Magic-Pulling-Back-the-Curtains-From-Your-Stylesheets/" target="_blank">It's Not Dark Magic: Pulling Back The Curtains From Your Stylesheets - Aimee Knight</a>
 
 <a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model" target="_blank">Constructing the Object Model — Google Developers</a>

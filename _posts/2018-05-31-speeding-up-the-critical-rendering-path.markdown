@@ -42,6 +42,11 @@ To summarise, once you’ve streamlined your content, ensure that it is prioriti
 
 ### Further Reading
 
+<a href="http://howard-dyer.co.uk/browser-rendering-or-how-i-learned-to-stop-wondering-and-understand-the-cssom.html"
+target="_blank">Browser Rendering or: How I Learned to Stop Wondering and Understand the CSSOM — Howard Dyer</a>
+
+<a href="http://howard-dyer.co.uk/improving-the-render.html" target="_blank">Improving the Render — Howard Dyer</a>
+
 <a href="https://docs.google.com/presentation/d/1tADQjXUTpXKi8srWbPp7EfmF68Gx-krhVBxT5NgmHxk/edit?usp=sharing" target="_blank">Slides from the "Browser Rendering (deep dive)" presentation</a>
 
 <a href="https://css-tricks.com/examples/LazyLoading/" target="_blank">Lazy Loading Images — CSS Tricks</a>
