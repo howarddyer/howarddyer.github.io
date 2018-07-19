@@ -44,11 +44,11 @@ position: 10
 <section class="pagination">
   <p>
     {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="c-button" style="margin-right: 1rem;">Newer notes</a>
+    <a href="{{ paginator.previous_page_path }}" class="c-button" style="margin-right: 1rem;">Newer posts</a>
     {% endif %}
     (Page {{ paginator.page }} of {{ paginator.total_pages }})
     {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="c-button" style="margin-left: 1rem;">Older notes</a>
+    <a href="{{ paginator.next_page_path }}" class="c-button" style="margin-left: 1rem;">Older posts</a>
     {% endif %}
   </p>
 </section>

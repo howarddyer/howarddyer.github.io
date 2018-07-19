@@ -24,6 +24,7 @@ permalink: /:title.html
 paginate: 6
 paginate_path: "/page:num/"
 port: 4446
+future: false
 
 sass:
     sass_dir: static/stylesheets
