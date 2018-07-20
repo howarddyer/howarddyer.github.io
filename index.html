@@ -4,21 +4,17 @@ position: 10
 ---
 
 <section>
-    {% assign i = 0 %}
     {% for post in paginator.posts %}
-        {% assign i = i | plus: 1 %}
-        {% assign j = i | modulo: 3 %}
 
-        {% if j == 0 %}
-            {% assign p = "c-post--type-3" %}
-        {% else %}
-            {% assign j = i | modulo: 2 %}
-            {% if j == 0 %}
+        {% for label in post.label %}
+            {% if label == "note" %}
+                {% assign p = "c-post--type-3" %}
+            {% elsif label == "quote" %}
                 {% assign p = "c-post--type-2" %}
             {% else %}
                 {% assign p = "c-post--type-1" %}
             {% endif %}
-        {% endif %}
+        {% endfor %}
 
         <a class="c-post c-post--brief {{p}}" href="{{ post.url | prepend: site.baseurl }}" >
             <article>
