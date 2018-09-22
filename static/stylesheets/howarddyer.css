@@ -57,7 +57,7 @@ figcaption {
   color: #999;
   font-style: italic;
   margin-bottom: 20px;
-  text-align: right; }
+  text-align: center; }
 
 pre {
   white-space: pre-wrap;
@@ -148,6 +148,10 @@ code {
       background: #9BD1BE;
       border-color: #FFF;
       color: #FFF; }
+  .c-post__image {
+    border: dashed 2px #CCC;
+    max-width: 100%;
+    padding: 20px; }
   .c-post--brief {
     margin-bottom: 40px;
     text-decoration: none; }

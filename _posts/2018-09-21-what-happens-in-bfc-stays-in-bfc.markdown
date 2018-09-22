@@ -27,68 +27,50 @@ This is mostly done through 3 means:
 ### Contains floats
 
 <figure>
-    <p data-height="260" data-theme-id="dark" data-slug-hash="YOgMVa" data-default-tab="result" data-user="howarddyer" data-pen-title="Block Formatting Context: Example 1" class="codepen">
-        See the Pen <a href="https://codepen.io/howarddyer/pen/YOgMVa/" target="_blank">Block Formatting Context: Example 1</a> by Howard Dyer (<a href="https://codepen.io/howarddyer" target="_blank">@howarddyer</a>) on CodePen.
-    </p>
+    <img src="/static/images/posts/2018-09-21-bfc-1.png" alt="An outer element does not respect the height of a floated element contained within it" class="c-post__image">
     <figcaption>An outer element does not respect the height of a floated element contained within it.</figcaption>
 </figure>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 Example 1 shows a text element and a floated element inside an outer element. When there is not enough text to surpass the height of the floated element, the outer element doesn’t respect the height of the floated element in the same way that it respects the height of the text element. Due to this, the floated element ends up spilling out of the outer element.
 
 (Note: This issue has been commonly been approached by applying a hack known as the <a href="https://css-tricks.com/snippets/css/clear-fix/" target="_blank">clearfix</a>. This works by inserting an element at the bottom of the outer element that clears the floated element. Though this arguably was never a very good approach.)
 
 <figure>
-    <p data-height="308" data-theme-id="dark" data-slug-hash="PdLgmx" data-default-tab="result" data-user="howarddyer" data-pen-title="Block Formatting Context: Example 2" class="codepen">
-        See the Pen <a href="https://codepen.io/howarddyer/pen/PdLgmx/" target="_blank">Block Formatting Context: Example 2</a> by Howard Dyer (<a href="https://codepen.io/howarddyer" target="_blank">@howarddyer</a>) on CodePen.
-    </p>
+    <img src="/static/images/posts/2018-09-21-bfc-2.png" alt="An outer element that creates a BFC will respects the height of all floated element contained within it" class="c-post__image">
     <figcaption>An outer element that creates a BFC will respects the height of all floated element contained within it.</figcaption>
 </figure>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 In Example 2, a BFC has been applied to the outer element so that it now contains the floated element.
 
 ### Prevents text wrap
 
 <figure>
-    <p data-height="390" data-theme-id="dark" data-slug-hash="XPGyyW" data-default-tab="result" data-user="howarddyer" data-pen-title="Block Formatting Context: Example 3" class="codepen">
-        See the Pen <a href="https://codepen.io/howarddyer/pen/XPGyyW/" target="_blank">Block Formatting Context: Example 3</a> by Howard Dyer (<a href="https://codepen.io/howarddyer" target="_blank">@howarddyer</a>) on CodePen.
-    </p>
+    <img src="/static/images/posts/2018-09-21-bfc-3.png" alt="Text that is placed next to a floated element will naturally wrap around it" class="c-post__image">
     <figcaption>Text that is placed next to a floated element will naturally wrap around it.</figcaption>
-</figure>    
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</figure>
 
 Example 3 shows that when there is enough text, the text element will wrap around the floated element. Notice also how the outer element wraps around the text, no matter how long the text runs (unlike the floated element in Example 1)
 
 <figure>
-    <p data-height="432" data-theme-id="dark" data-slug-hash="bxZJgZ" data-default-tab="result" data-user="howarddyer" data-pen-title="Block Formatting Context: Example 4" class="codepen">
-        See the Pen <a href="https://codepen.io/howarddyer/pen/bxZJgZ/" target="_blank">Block Formatting Context: Example 4</a> by Howard Dyer (<a href="https://codepen.io/howarddyer" target="_blank">@howarddyer</a>) on CodePen.
-    </p>
+    <img src="/static/images/posts/2018-09-21-bfc-4.png" alt="Text within a BFC will not wrap around floated elements that are outside the BFC" class="c-post__image">
     <figcaption>Text within a BFC will not wrap around floated elements that are outside the BFC.</figcaption>
 </figure>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 In Example 4, a BFC has been applied to the text element so that it no longer wraps around the floated element.
 
 ### Prevents collapsing of margins
 
 <figure>
-    <p data-height="335" data-theme-id="dark" data-slug-hash="VGRNWQ" data-default-tab="result" data-user="howarddyer" data-pen-title="Block Formatting Context: Example 5" class="codepen">
-        See the Pen <a href="https://codepen.io/howarddyer/pen/VGRNWQ/" target="_blank">Block Formatting Context: Example 5</a> by Howard Dyer (<a href="https://codepen.io/howarddyer" target="_blank">@howarddyer</a>) on CodePen.
-    </p>
+    <img src="/static/images/posts/2018-09-21-bfc-5.png" alt="An element's margins will naturally collapse into another element's margins if placed adjacent" class="c-post__image">
     <figcaption>An element's margins will naturally collapse into another element's margins if placed adjacent.</figcaption>
 </figure>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 Example 5 shows a series of text elements within an outer element. The outer element and all text elements have top and bottom margins. However we can see that the top margin of the first text element and the bottom margin of the last text element collapses with the margins of the outer element.
 
 <figure>
-    <p data-height="395" data-theme-id="dark" data-slug-hash="zJbXPN" data-default-tab="result" data-user="howarddyer" data-pen-title="Block Formatting Context: Example 6" class="codepen">
-        See the Pen <a href="https://codepen.io/howarddyer/pen/zJbXPN/" target="_blank">Block Formatting Context: Example 6</a> by Howard Dyer (<a href="https://codepen.io/howarddyer" target="_blank">@howarddyer</a>) on CodePe.
-    </p>
+    <img src="/static/images/posts/2018-09-21-bfc-6.png" alt="If an element is within a BFC, its margins will not collapse into margins outside of the BFC" class="c-post__image">
     <figcaption>If an element is within a BFC, its margins will not collapse into margins outside of the BFC.</figcaption>
 </figure>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 With a BFC applied to the outer element, the margins of the first and last text elements no longer collapse.
 
@@ -118,3 +100,5 @@ For Block Formatting Contexts it could simply be put, that what happens in a BFC
 <a href="https://caniuse.com/#search=flow-root" target="_blank">display: flow-root | Can I Use...</a>
 
 <a href="https://css-tricks.com/snippets/css/clear-fix/" target="_blank">The Clearfix: Force an Element To Self-Clear its Children | CSS Tricks</a>
+
+<a href="https://codepen.io/howarddyer/full/NLmqMb" target="_blank">Block Formatting Context examples, pen by Howard Dyer | Codepen</a>
