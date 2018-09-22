@@ -22,7 +22,10 @@ However since many other languages are read/written from right-to-left or even t
 
 Imagine that there is a website containing several pages of news articles and the pagination includes buttons with the labels 'Previous' and 'Next'. The articles on the website are sorted by date and time.
 
-![Unclear pagination using next and previous buttons](/static/images/posts/2018-08-20-pagination.png "Unclear pagination using next and previous buttons")
+<figure>
+    <img src="/static/images/posts/2018-08-20-pagination.png" alt="Unclear pagination using next and previous buttons" class="c-post__image">
+    <figcaption>Unclear pagination using next and previous buttons.</figcaption>
+</figure>
 
 Different people will visit a website for different purposes, but if, in the example above, you were intending on getting the most recent episode, which button would you press? Or more to the point, **how would you know** which button to press?
 

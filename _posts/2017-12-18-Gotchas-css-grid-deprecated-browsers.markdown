@@ -40,11 +40,17 @@ Autoplacement in CSS Grid is a set of rules that automatically places items that
 
 The autoplacement of these items, as per the current implementation, would result in the following layout:
 
-![Autoplacement, as per the current CSS Grid implementation](/static/images/posts/2017-12-18-grid-normal.png "Autoplacement, as per the current CSS Grid implementation")
+<figure>
+    <img src="/static/images/posts/2017-12-18-grid-normal.png" alt="Autoplacement, as per the current CSS Grid implementation" class="c-post__image">
+    <figcaption>Autoplacement, as per the current CSS Grid implementation.</figcaption>
+</figure>
 
 Unfortunately, Autoplacement is not featured in the 2011 implementation. Therefore, the same layout in deprecated browsers causes the items to stack up in the first cell of the grid.
 
-![Autoplacement, as per the 2011 CSS Grid implementation](/static/images/posts/2017-12-18-grid-ie.png "Autoplacement, as per the 2011 CSS Grid implementation")
+<figure>
+    <img src="/static/images/posts/2017-12-18-grid-ie.png" alt="Autoplacement, as per the 2011 CSS Grid implementation" class="c-post__image">
+    <figcaption>Autoplacement, as per the 2011 CSS Grid implementation.</figcaption>
+</figure>
 
 To get around this, items must be placed manually using the prefixed property for "grid-template-columns".
 
@@ -58,7 +64,10 @@ To get around this, items must be placed manually using the prefixed property fo
 
 The "grid-column-gap", "grid-row-gap" and "grid-gap properties" can be used to add gutters between columns in a grid. For example, adding 20 pixel gutters to the grid in [Gotcha 1](#gotcha-1-the-repeat-function) and [Gotcha 2](#gotcha-2-autoplacement) would result in the following layout:
 
-![Using grid gap in CSS Grid, as per the 2011 CSS Grid implementation](/static/images/posts/2017-12-18-grid-gap.png "Using grid gap in CSS Grid, as per the 2011 CSS Grid implementation")
+<figure>
+    <img src="/static/images/posts/2017-12-18-grid-gap.png" alt="Using grid gap in CSS Grid, as per the 2011 CSS Grid implementation" class="c-post__image">
+    <figcaption>Using grid gap in CSS Grid, as per the 2011 CSS Grid implementation.</figcaption>
+</figure>
 
 Unfortunately, these properties are not available in the 2011 implementation. A work around is to create extra columns using the prefixed property for "grid-template-columns" to act as gutters in deprecated browsers.
 
