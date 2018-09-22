@@ -28,7 +28,7 @@ This is mostly done through 3 means:
 
 <figure>
     <img src="/static/images/posts/2018-09-21-bfc-1.png" alt="An outer element does not respect the height of a floated element contained within it" class="c-post__image">
-    <figcaption>An outer element does not respect the height of a floated element contained within it.</figcaption>
+    <figcaption>Example 1: An outer element does not respect the height of a floated element contained within it.</figcaption>
 </figure>
 
 Example 1 shows a text element and a floated element inside an outer element. When there is not enough text to surpass the height of the floated element, the outer element doesn’t respect the height of the floated element in the same way that it respects the height of the text element. Due to this, the floated element ends up spilling out of the outer element.
@@ -37,7 +37,7 @@ Example 1 shows a text element and a floated element inside an outer element. Wh
 
 <figure>
     <img src="/static/images/posts/2018-09-21-bfc-2.png" alt="An outer element that creates a BFC will respects the height of all floated element contained within it" class="c-post__image">
-    <figcaption>An outer element that creates a BFC will respects the height of all floated element contained within it.</figcaption>
+    <figcaption>Example 2: An outer element that creates a BFC will respects the height of all floated element contained within it.</figcaption>
 </figure>
 
 In Example 2, a BFC has been applied to the outer element so that it now contains the floated element.
@@ -46,14 +46,14 @@ In Example 2, a BFC has been applied to the outer element so that it now contain
 
 <figure>
     <img src="/static/images/posts/2018-09-21-bfc-3.png" alt="Text that is placed next to a floated element will naturally wrap around it" class="c-post__image">
-    <figcaption>Text that is placed next to a floated element will naturally wrap around it.</figcaption>
+    <figcaption>Example 3: Text that is placed next to a floated element will naturally wrap around it.</figcaption>
 </figure>
 
 Example 3 shows that when there is enough text, the text element will wrap around the floated element. Notice also how the outer element wraps around the text, no matter how long the text runs (unlike the floated element in Example 1)
 
 <figure>
     <img src="/static/images/posts/2018-09-21-bfc-4.png" alt="Text within a BFC will not wrap around floated elements that are outside the BFC" class="c-post__image">
-    <figcaption>Text within a BFC will not wrap around floated elements that are outside the BFC.</figcaption>
+    <figcaption>Example 4: Text within a BFC will not wrap around floated elements that are outside the BFC.</figcaption>
 </figure>
 
 In Example 4, a BFC has been applied to the text element so that it no longer wraps around the floated element.
@@ -62,17 +62,17 @@ In Example 4, a BFC has been applied to the text element so that it no longer wr
 
 <figure>
     <img src="/static/images/posts/2018-09-21-bfc-5.png" alt="An element's margins will naturally collapse into another element's margins if placed adjacent" class="c-post__image">
-    <figcaption>An element's margins will naturally collapse into another element's margins if placed adjacent.</figcaption>
+    <figcaption>Example 5: An element's margins will naturally collapse into another element's margins if placed adjacent.</figcaption>
 </figure>
 
 Example 5 shows a series of text elements within an outer element. The outer element and all text elements have top and bottom margins. However we can see that the top margin of the first text element and the bottom margin of the last text element collapses with the margins of the outer element.
 
 <figure>
     <img src="/static/images/posts/2018-09-21-bfc-6.png" alt="If an element is within a BFC, its margins will not collapse into margins outside of the BFC" class="c-post__image">
-    <figcaption>If an element is within a BFC, its margins will not collapse into margins outside of the BFC.</figcaption>
+    <figcaption>Example 6: If an element is within a BFC, its margins will not collapse into margins outside of the BFC.</figcaption>
 </figure>
 
-With a BFC applied to the outer element, the margins of the first and last text elements no longer collapse.
+In Example 6, with a BFC applied to the outer element, the margins of the first and last text elements no longer collapse.
 
 ### How do you create a BFC?
 
@@ -91,7 +91,7 @@ You could also apply a display property of flow-root. Though <a href="https://ca
 
 ### Conclusion
 
-There are many issues that occur in CSS that, through iteration, you acquire knowledge on how to solve. But it’s quite interesting that, whilst problems are solved, it’s never always fully understood why the problems are caused or how the solution actually solves it.
+There are many issues that occur in CSS that, through iteration, you acquire knowledge on how to solve. But it’s quite interesting that, whilst problems are solved, it’s not always fully understood why the problems are caused or how the solution actually solves it.
 
 For Block Formatting Contexts it could simply be put, that what happens in a BFC stays in a BFC.
 
