@@ -53,6 +53,12 @@ ul,
 p {
   margin-bottom: 10px; }
 
+figcaption {
+  color: #999;
+  font-style: italic;
+  margin-bottom: 20px;
+  text-align: right; }
+
 pre {
   white-space: pre-wrap;
   white-space: -moz-pre-wrap;

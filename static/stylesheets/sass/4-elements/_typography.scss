@@ -12,7 +12,6 @@ h1 {
 
 h2 {
     @include px-rem-size("font-size", $font-size-l);
-    // color: $blue-l;
     font-family: $font-family-sans;
 }
 
@@ -31,6 +30,13 @@ h3,
 ul,
 p {
     margin-bottom: $value-sm;
+}
+
+figcaption {
+    color: $grey-l;
+    font-style: $font-style-italic;
+    margin-bottom: $value-m;
+    text-align: right;
 }
 
 pre {
