@@ -12,13 +12,13 @@ The Block Formatting Context (BFC) in CSS is a concept that many developers can�
 
 ### What is a BFC?
 
-A BFC is a region implicitly (or sometimes explicitly) applied to an element, which means this parent element will contain all children elements, i.e. the parent element is the origin of the BFC, and interactions and behaviours of children elements alter as a side-effect of this.
+A BFC is a region implicitly (or sometimes explicitly) applied to an element, so that this parent element will *contain* all children elements, i.e. the parent element is the origin of the BFC, and interactions and behaviours of children elements alter as a side-effect of this.
 
 ### But seriously, what is a BFC?
 
 A good metaphor of a BFC is that it’s a protective parent that doesn’t allow any of its children to go outside of its 4 walls (if you were to think of the box-model, the 4 walls are the borders).
 
-This is mostly done through 3 means:
+This is done by 3 means:
 
 * Containing floats
 * Preventing text wrap around outside elements
@@ -31,13 +31,13 @@ This is mostly done through 3 means:
     <figcaption>Example 1: An outer element does not respect the height of a floated element contained within it.</figcaption>
 </figure>
 
-Example 1 shows a text element and a floated element inside an outer element. When there is not enough text to surpass the height of the floated element, the outer element doesn’t respect the height of the floated element in the same way that it respects the height of the text element. Due to this, the floated element ends up spilling out of the outer element.
+Example 1 shows a text element and a floated element inside an outer element without a fixed height. When there is not enough text to surpass the height of the floated element, the outer element doesn’t respect the height of the floated element in the same way that it respects the height of the text element. Due to this, the floated element ends up spilling out of the outer element.
 
-(Note: This issue has been commonly been approached by applying a hack known as the <a href="https://css-tricks.com/snippets/css/clear-fix/" target="_blank">clearfix</a>. This works by inserting an element at the bottom of the outer element that clears the floated element. Though this arguably was never a very good approach.)
+(Note: This issue has commonly been approached by applying a hack known as the <a href="https://css-tricks.com/snippets/css/clear-fix/" target="_blank">clearfix</a>. This works by inserting an element at the bottom of the outer element that clears the floated element. Though this arguably was never a very good approach.)
 
 <figure>
-    <img src="/static/images/posts/2018-09-21-bfc-2.png" alt="An outer element that creates a BFC will respects the height of all floated element contained within it" class="c-post__image">
-    <figcaption>Example 2: An outer element that creates a BFC will respects the height of all floated element contained within it.</figcaption>
+    <img src="/static/images/posts/2018-09-21-bfc-2.png" alt="An outer element that creates a BFC will respect the height of all floated element contained within it" class="c-post__image">
+    <figcaption>Example 2: An outer element that creates a BFC will respect the height of all floated element contained within it.</figcaption>
 </figure>
 
 In Example 2, a BFC has been applied to the outer element so that it now contains the floated element.
@@ -65,7 +65,7 @@ In Example 4, a BFC has been applied to the text element so that it no longer wr
     <figcaption>Example 5: An element's margins will naturally collapse into another element's margins if placed adjacent.</figcaption>
 </figure>
 
-Example 5 shows a series of text elements within an outer element. The outer element and all text elements have top and bottom margins. However we can see that the top margin of the first text element and the bottom margin of the last text element collapses with the margins of the outer element.
+Example 5 shows a series of text elements (blue) within an outer element (grey). The outer element and all text elements have top and bottom margins. However we can see that the top margin of the first text element and the bottom margin of the last text element collapses with the margins of the outer element.
 
 <figure>
     <img src="/static/images/posts/2018-09-21-bfc-6.png" alt="If an element is within a BFC, its margins will not collapse into margins outside of the BFC" class="c-post__image">
