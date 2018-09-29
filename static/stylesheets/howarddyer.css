@@ -185,7 +185,8 @@ code {
     margin: 0 10px;
     width: 40px; }
   .c-social__icon {
-    width: 40px; }
+    width: 40px;
+    will-change: transform, filter; }
     .c-social__icon:hover {
       animation: rotate .2s linear forwards; }
 

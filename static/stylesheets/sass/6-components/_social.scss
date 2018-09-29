@@ -21,6 +21,7 @@
 
     &__icon {
         width: $c-social-icon-width;
+        will-change: transform, filter;
 
         &:hover {
             animation: rotate .2s linear forwards;
