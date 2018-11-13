@@ -1,0 +1,15 @@
+// ############################
+// Table
+// ############################
+
+table {
+    border: solid $value-xxs $black;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th,
+td {
+    border: solid $value-xxs $black;
+    padding: $value-s;
+}

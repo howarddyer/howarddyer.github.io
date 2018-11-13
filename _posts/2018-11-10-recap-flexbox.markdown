@@ -15,7 +15,7 @@ label: note
         <th>Default</th>
     </tr>
     <tr>
-        <th rowspan="7" style="transform: rotate(-90deg);">flex-container</th>
+        <th rowspan="7">flex-container</th>
         <td>display</td>
         <td>flex | inline-flex</td>
         <td>N/A</td>
@@ -51,7 +51,7 @@ label: note
         <td>stretch</td>
     </tr>
     <tr>
-        <th rowspan="6" style="transform: rotate(-90deg);">flex-item</th>
+        <th rowspan="6">flex-item</th>
         <td>order</td>
         <td>&lt;number-with-no-unit&gt;</td>
         <td>0</td>
@@ -85,7 +85,7 @@ label: note
 
 ### Parent properties (flex container)
 
-** display **
+**display**
 
 Enables a flex context for all direct children.
 
@@ -98,7 +98,7 @@ Enables a flex context for all direct children.
 <p data-height="262" data-theme-id="dark" data-slug-hash="oQjNdP" data-default-tab="result" data-user="howarddyer" data-pen-title="1/11: Flexbox display example" class="codepen">See the Pen <a href="https://codepen.io/howarddyer/pen/oQjNdP/">1/11: Flexbox display example</a> by Howard Dyer (<a href="https://codepen.io/howarddyer">@howarddyer</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-** flex-direction **
+**flex-direction**
 
 Defines the main axis of the flex context.
 
@@ -111,7 +111,7 @@ Defines the main axis of the flex context.
 <p data-height="260" data-theme-id="dark" data-slug-hash="NEGWXq" data-default-tab="result" data-user="howarddyer" data-pen-title="2/11: Flexbox flex-direction example" class="codepen">See the Pen <a href="https://codepen.io/howarddyer/pen/NEGWXq/">2/11: Flexbox flex-direction example</a> by Howard Dyer (<a href="https://codepen.io/howarddyer">@howarddyer</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-** flex-wrap **
+**flex-wrap**
 
 Flex items will, by default, naturally try and fit onto one line. This property can be used to redefine this behaviour.
 
@@ -124,7 +124,7 @@ Flex items will, by default, naturally try and fit onto one line. This property 
 <p data-height="320" data-theme-id="dark" data-slug-hash="bQbOeK" data-default-tab="result" data-user="howarddyer" data-pen-title="3/11: Flexbox flex-wrap example" class="codepen">See the Pen <a href="https://codepen.io/howarddyer/pen/bQbOeK/">3/11: Flexbox flex-wrap example</a> by Howard Dyer (<a href="https://codepen.io/howarddyer">@howarddyer</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-** flex-flow **
+**flex-flow**
 
 Shorthand for ```flex-direction``` and ```flex-wrap```.
 
@@ -134,7 +134,7 @@ Shorthand for ```flex-direction``` and ```flex-wrap```.
 }
 ```
 
-** justify-content **
+**justify-content**
 
 Controls the alignment/distribution of flex items along the main axis.
 
@@ -147,7 +147,7 @@ Controls the alignment/distribution of flex items along the main axis.
 <p data-height="263" data-theme-id="dark" data-slug-hash="vQNYrb" data-default-tab="result" data-user="howarddyer" data-pen-title="4/11: Flexbox justify-content example" class="codepen">See the Pen <a href="https://codepen.io/howarddyer/pen/vQNYrb/">4/11: Flexbox justify-content example</a> by Howard Dyer (<a href="https://codepen.io/howarddyer">@howarddyer</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-** align-items **
+**align-items**
 
 Controls the alignment/distribution of flex items along the cross axis (affecting each individual line of flex items).
 
@@ -160,7 +160,7 @@ Controls the alignment/distribution of flex items along the cross axis (affectin
 <p data-height="505" data-theme-id="dark" data-slug-hash="xQwxJj" data-default-tab="result" data-user="howarddyer" data-pen-title="5/11: Flexbox align-items example" class="codepen">See the Pen <a href="https://codepen.io/howarddyer/pen/xQwxJj/">5/11: Flexbox align-items example</a> by Howard Dyer (<a href="https://codepen.io/howarddyer">@howarddyer</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-** align-content **
+**align-content**
 
 Controls the alignment/distribution of multiple lines of flex items along the cross axis (affecting multiple lines of flex items as one).
 
@@ -175,7 +175,7 @@ Controls the alignment/distribution of multiple lines of flex items along the cr
 
 ### Children properties (flex items)
 
-** order **
+**order**
 
 Flex items are, by default, laid out in source order. This property can be used to redefine this for each individual flex item.
 
@@ -188,7 +188,7 @@ Flex items are, by default, laid out in source order. This property can be used 
 <p data-height="263" data-theme-id="dark" data-slug-hash="EOVxrE" data-default-tab="result" data-user="howarddyer" data-pen-title="7/11: Flexbox order example" class="codepen">See the Pen <a href="https://codepen.io/howarddyer/pen/EOVxrE/">7/11: Flexbox order example</a> by Howard Dyer (<a href="https://codepen.io/howarddyer">@howarddyer</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-** flex-basis **
+**flex-basis**
 
 Defines the default size of an element along the main axis, before it is manipulated by other properties. The value given is a ratio, for example:
 * if all flex items have ```flex-basis: 1;```, the space will be shared out evenly.
@@ -203,7 +203,7 @@ Defines the default size of an element along the main axis, before it is manipul
 <p data-height="261" data-theme-id="dark" data-slug-hash="gQaOyO" data-default-tab="result" data-user="howarddyer" data-pen-title="8/11: Flexbox flex-basis example" class="codepen">See the Pen <a href="https://codepen.io/howarddyer/pen/gQaOyO/">8/11: Flexbox flex-basis example</a> by Howard Dyer (<a href="https://codepen.io/howarddyer">@howarddyer</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-** flex-grow **
+**flex-grow**
 
 Defines the extent of the flex item's ability to grow. This property controls how free space can be occupied by flex items, when the entirety of the main axis is not filled.
 
@@ -216,7 +216,7 @@ Defines the extent of the flex item's ability to grow. This property controls ho
 <p data-height="263" data-theme-id="dark" data-slug-hash="bQVGyp" data-default-tab="result" data-user="howarddyer" data-pen-title="9/11: Flexbox grow example" class="codepen">See the Pen <a href="https://codepen.io/howarddyer/pen/bQVGyp/">9/11: Flexbox grow example</a> by Howard Dyer (<a href="https://codepen.io/howarddyer">@howarddyer</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-** flex-shrink **
+**flex-shrink**
 
 Defines the extent of the flex item's ability to shrink. This property comes into play when the container is too small to contain the flex items.
 
@@ -229,7 +229,7 @@ Defines the extent of the flex item's ability to shrink. This property comes int
 <p data-height="264" data-theme-id="dark" data-slug-hash="YRyzbM" data-default-tab="result" data-user="howarddyer" data-pen-title="10/11: Flexbox shrink example" class="codepen">See the Pen <a href="https://codepen.io/howarddyer/pen/YRyzbM/">10/11: Flexbox shrink example</a> by Howard Dyer (<a href="https://codepen.io/howarddyer">@howarddyer</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-** flex **
+**flex**
 
 Shorthand for ```flex-grow```, ```flex-shrink``` and ```flex-basis```.
 
@@ -239,7 +239,7 @@ Shorthand for ```flex-grow```, ```flex-shrink``` and ```flex-basis```.
 }
 ```
 
-** align-self **
+**align-self**
 
 This property mirrors the behaviour of the flex container's ```align-content``` property, but can be used to override individual flex items.
 
@@ -251,5 +251,3 @@ This property mirrors the behaviour of the flex container's ```align-content``` 
 
 <p data-height="399" data-theme-id="dark" data-slug-hash="qQOBzQ" data-default-tab="result" data-user="howarddyer" data-pen-title="11/11: Flexbox align-self example" class="codepen">See the Pen <a href="https://codepen.io/howarddyer/pen/qQOBzQ/">11/11: Flexbox align-self example</a> by Howard Dyer (<a href="https://codepen.io/howarddyer">@howarddyer</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
-### Resources
