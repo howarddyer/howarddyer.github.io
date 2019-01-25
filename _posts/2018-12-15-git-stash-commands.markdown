@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Git stash commands"
+title:  "Git Stash Commands"
 date:   2018-12-15 12:00:00
 label: note
 ---
