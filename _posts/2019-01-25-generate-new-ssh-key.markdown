@@ -2,6 +2,10 @@
 layout: post
 title:  "Generate a New SSH Key"
 date:   2019-01-25 16:30:00
+description:
+  nested:
+    - description: 'ssh-keygen -o -t rsa -b 4096 -C /"name@email.com"'
+    - description: "cat ~/.ssh/id_rsa.pub | clip"
 label: note
 ---
 

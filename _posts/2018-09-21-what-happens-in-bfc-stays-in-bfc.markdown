@@ -6,15 +6,15 @@ description: "The Block Formatting Context (BFC) in CSS is a concept that many d
 label: post
 ---
 
-### Introduction
+## Introduction
 
 The Block Formatting Context (BFC) in CSS is a concept that many developers can’t name or describe, but know all about. In this post I’ll briefly outline what a BFC is, the problems that they solve and how to create one.
 
-### What is a BFC?
+## What is a BFC?
 
 A BFC is a region implicitly (or sometimes explicitly) applied to an element, so that this parent element will *contain* all children elements, i.e. the parent element is the origin of the BFC, and interactions and behaviours of children elements alter as a side-effect of this.
 
-### But seriously, what is a BFC?
+## But seriously, what is a BFC?
 
 A good metaphor of a BFC is that it’s a protective parent that doesn’t allow any of its children to go outside of its 4 walls (if you were to think of the box-model, the 4 walls are the borders).
 
@@ -24,7 +24,7 @@ This is done by 3 means:
 * Preventing text wrap around outside elements
 * Preventing the collapse of margins with the margins of outside elements
 
-### Contains floats
+## Contains floats
 
 <figure>
     <img src="/static/images/posts/2018-09-21-bfc-1.png" alt="An outer element does not respect the height of a floated element contained within it" class="c-post__image">
@@ -42,7 +42,7 @@ Example 1 shows a text element and a floated element inside an outer element wit
 
 In Example 2, a BFC has been applied to the outer element so that it now contains the floated element.
 
-### Prevents text wrap
+## Prevents text wrap
 
 <figure>
     <img src="/static/images/posts/2018-09-21-bfc-3.png" alt="Text that is placed next to a floated element will naturally wrap around it" class="c-post__image">
@@ -58,7 +58,7 @@ Example 3 shows that when there is enough text, the text element will wrap aroun
 
 In Example 4, a BFC has been applied to the text element so that it no longer wraps around the floated element.
 
-### Prevents collapsing of margins
+## Prevents collapsing of margins
 
 <figure>
     <img src="/static/images/posts/2018-09-21-bfc-5.png" alt="An element's margins will naturally collapse into another element's margins if placed adjacent" class="c-post__image">
@@ -74,7 +74,7 @@ Example 5 shows a series of text elements (blue) within an outer element (grey).
 
 In Example 6, with a BFC applied to the outer element, the margins of the first and last text elements no longer collapse.
 
-### How do you create a BFC?
+## How do you create a BFC?
 
 A BFC can be created, as a a side effect, by applying:
 
@@ -89,13 +89,13 @@ A BFC can be created, as a a side effect, by applying:
 
 You could also apply a display property of flow-root. Though <a href="https://caniuse.com/#search=flow-root" target="_blank">browser support is still limited</a>, the sole purpose of this property is to create a BFC.
 
-### Conclusion
+## Conclusion
 
 There are many issues that occur in CSS that, through iteration, you acquire knowledge on how to solve. But it’s quite interesting that, whilst problems are solved, it’s not always fully understood why the problems are caused or how the solution actually solves it.
 
 For Block Formatting Contexts it could simply be put, that what happens in a BFC stays in a BFC.
 
-### Resources
+## Resources
 
 <a href="https://caniuse.com/#search=flow-root" target="_blank">display: flow-root | Can I Use...</a>
 

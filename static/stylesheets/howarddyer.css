@@ -479,6 +479,9 @@ pre.highlight {
   padding: 20px;
   margin-bottom: 20px; }
 
+.u-display-none {
+  display: none; }
+
 .u-space-bottom-m-none {
   margin-bottom: 0; }
 

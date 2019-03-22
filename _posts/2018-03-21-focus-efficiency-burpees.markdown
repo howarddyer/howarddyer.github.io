@@ -10,7 +10,7 @@ I had a *revelation* the other day to do with how my mind affects my motivation,
 
 Warning: this post contains talk of exercise.
 
-### The evil (exercise) regime
+## The evil (exercise) regime
 
 5 sets of 20 burpees.
 
@@ -43,7 +43,7 @@ That was my inner monologue whilst I was completely this evil exercise regime (I
 
 With this inner monologue running through my head, I found that I was beginning to fail around the 10th rep so that the last 10 were pure hell.
 
-### Stay present
+## Stay present
 
 I figured further into the sets that my thoughts were a contributing factor to my failure — more specifically, **how I was concentrating on how many reps I had left to do**.
 
@@ -54,6 +54,6 @@ I started concentrating intensely and solely on the number of the rep I had just
 
 It seems that the extra (unneeded) information of knowing how many reps I had left distracted me and made the potential of completing those reps much more difficult.
 
-### Conclusion
+## Conclusion
 
 Forcefully limiting your focus solely to things that are relevant will stop you fascinating and being affected negatively by things that are not.

@@ -6,7 +6,7 @@ description: "The CRP is the steps that a browsers need to take before any visua
 label: post
 ---
 
-### Introduction
+## Introduction
 
 I recently did a talk at my place of work on the process that the browser goes through to render a page, following a subject that I've recently been researching. Part of the talk is summed up in my previous post <a href="http://howard-dyer.co.uk/browser-rendering-or-how-i-learned-to-stop-wondering-and-understand-the-cssom.html" target="_blank">Browser Rendering or: How I Learned to Stop Wondering and Understand the CSSOM</a>.
 
@@ -22,25 +22,25 @@ A simplified version of these steps would be:
 
 The question is how can we optimise the CRP to speed up the time to first render?
 
-### Minimise the amount of bytes to be downloaded
+## Minimise the amount of bytes to be downloaded
 
 It seems obvious to say, but if the browser is given less things to parse, then it will take less time to do so.
 
 - Using common sense, reduce and simplify your content as much as is practical so that you only use HTML, CSS and images that are absolutely required
 - Reduce the size and amount of files that are implemented by the page - make use of optimisation steps such as minification, concatenation, image optimisation and compression, caching, sprites, etc
 
-### Reduce the length and complexity of the CRP
+## Reduce the length and complexity of the CRP
 
 If page content is prioritised, it can be ensured that the CRP only contains content that the first render is reliant on.
 
 - Consider styling above-the-fold content with inline CSS (in the head) to ensure that the first render is not dependant on construction of the CSSOM
 - If the CRP contains any content that the first render does not require (e.g. JavaScript, images), remove it from the CRP and load it asynchronously or after the first render is complete (e.g. using a Lazy Load plugin)
 
-### Conclusion
+## Conclusion
 
 To summarise, once you’ve streamlined your content, ensure that it is prioritised to deliver the first render sooner. The CRP has to be executed every time a webpage is visited, so it makes sense to ensure that it is as slight and also as relevant as possible.
 
-### Further Reading
+## Further Reading
 
 <a href="http://howard-dyer.co.uk/browser-rendering-or-how-i-learned-to-stop-wondering-and-understand-the-cssom.html"
 target="_blank">Browser Rendering or: How I Learned to Stop Wondering and Understand the CSSOM — Howard Dyer</a>

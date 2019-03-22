@@ -6,14 +6,14 @@ description: "A brief documentation of the steps that the browser takes to rende
 label: post
 ---
 
-### Introduction
+## Introduction
 
 I listened to <a href="http://shoptalkshow.com/episodes/306-debugging-css-aimee-knight/" target="_blank">episode 306 of the Shoptalk Show</a> featuring <a href="https://twitter.com/Aimee_Knight" target="_blank">Aimee Knight</a> (of Javascript Jabber fame) in which she talks about the CSSOM. Before this, the CSSOM was a relatively unknown concept to me, even though it plays a pivotal role during the rendering of content on the web.
 
-### What is the CSSOM?
+## What is the CSSOM?
 The CSSOM stands for CSS Object Model, and in principal, is the same deal as the DOM (Document Object Model), except that where the DOM relates to the content of a HTML file, the CSSOM relates to the content of a CSS file. What follows is a brief documentation of the steps that the browser takes to render the CSSOM, to better understand how/why the CSSOM plays such a vital role in the rendering of content on the web.
 
-### How the browser renders content (in brief)
+## How the browser renders content (in brief)
 The following steps start after the point that the browser has received a response from the server:
 
 1. **DOM:** The browser downloads and parses the HTML file, and then undergoes a process to build the DOM
@@ -37,10 +37,10 @@ The following steps start after the point that the browser has received a respon
     - **Painting:** Each node in the Render Tree is converted to pixels on screen using multiple layers, which govern the order in which objects are painted (from back to front)
     - **Compositing:** All layers are flattened into the final image
 
-### Conclusion
+## Conclusion
 Having a more in-depth understanding of how the actually browser renders content is a heuristic hack to producing more informed, efficient and performant code. In a future post, I'll explore more about how this knowledge can be used to level-up your code.
 
-### Further Reading
+## Further Reading
 
 <a href="http://howard-dyer.co.uk/speeding-up-the-critical-rendering-path.html" target="_blank">Speeding Up the Critical Rendering Path — Howard Dyer</a>
 

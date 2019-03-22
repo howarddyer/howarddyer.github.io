@@ -8,7 +8,7 @@ label: note
 
 When using CSS Grid in IE10, IE11 and Edge (15 and below), implementation is based on the <a href="https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/" target="_blank">2011 implementation of CSS Grid</a>. There are a few things that need to be considered whenever support for those browsers is required.
 
-### Gotcha 1: The repeat function
+## Gotcha 1: The repeat function
 
 To create a 4 column grid in CSS grid, the repeat function can be used as follows:
 
@@ -27,7 +27,7 @@ However, the repeat function was included after the 2011 implementation. To allo
 }
 ```
 
-### Gotcha 2: Autoplacement
+## Gotcha 2: Autoplacement
 
 Autoplacement in CSS Grid is a set of rules that automatically places items that have not been explicitly placed within the grid. For example, consider the following:
 
@@ -60,7 +60,7 @@ To get around this, items must be placed manually using the prefixed property fo
 }
 ```
 
-### Gotcha 3: The grid gap property (creating a grid with grid gap)
+## Gotcha 3: The grid gap property (creating a grid with grid gap)
 
 The "grid-column-gap", "grid-row-gap" and "grid-gap properties" can be used to add gutters between columns in a grid. For example, adding 20 pixel gutters to the grid in [Gotcha 1](#gotcha-1-the-repeat-function) and [Gotcha 2](#gotcha-2-autoplacement) would result in the following layout:
 
@@ -79,7 +79,7 @@ grid {
 }
 ```
 
-### Gotcha 4: The grid gap property (placing items within a grid with grid gap)
+## Gotcha 4: The grid gap property (placing items within a grid with grid gap)
 
 Within a grid that incorporates grid gap, manually placed items will need adjusting. For example, using "-ms-grid-column: 2"; in the workaround mentioned in [Gotcha 3](gotcha-3-the-grid-gap-property-creating-a-grid-with-grid-gap) would place the item into the grid gutter. A workaround would be to use the following:
 
@@ -111,7 +111,7 @@ If you wish to use a SASS mixin to generate item placement for both implementati
 ```
 
 
-### Gotcha 5: the span keyword
+## Gotcha 5: the span keyword
 
 The "span" keyword is not featured in the 2011 implementation. There are equivalent property prefixes that you can use instead:
 
@@ -122,13 +122,13 @@ The "span" keyword is not featured in the 2011 implementation. There are equival
 }
 ```
 
-### Conclusion
+## Conclusion
 
 CSS Grid is a modern technology for modern browsers. In an ideal world we would only develop for modern browsers, but there are (unfortunately) still many instances that call for the continued support of deprecated browsers.
 
 CSS Grid will really begin to shine when it is not held back by the limitations of deprecated browsers.
 
-### Further reading:
+## Further reading:
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_and_Progressive_Enhancement" target="_blank">List of prefixed CSS Grid properties, visit MDN Web Docs</a>
 

@@ -5,7 +5,7 @@ date:   2018-11-10 17:00:00
 label: note
 ---
 
-### TL; DR
+## TL; DR
 
 <table>
     <tr>
@@ -83,7 +83,7 @@ label: note
     </tr>
 </table>
 
-### Parent properties (flex container)
+## Parent properties (flex container)
 
 **display**
 
@@ -173,7 +173,7 @@ Controls the alignment/distribution of multiple lines of flex items along the cr
 <p data-height="395" data-theme-id="dark" data-slug-hash="PxPoxY" data-default-tab="result" data-user="howarddyer" data-pen-title="6/11: Flexbox align-content example" class="codepen">See the Pen <a href="https://codepen.io/howarddyer/pen/PxPoxY/">6/11: Flexbox align-content example</a> by Howard Dyer (<a href="https://codepen.io/howarddyer">@howarddyer</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-### Children properties (flex items)
+## Children properties (flex items)
 
 **order**
 

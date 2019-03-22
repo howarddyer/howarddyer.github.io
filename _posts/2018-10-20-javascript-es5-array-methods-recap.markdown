@@ -5,7 +5,7 @@ date:   2018-10-20 17:00:00
 label:  note
 ---
 
-### forEach
+## forEach
 *Array.prototype.forEach(function callback(item, [index, array]))*
 
 This method:
@@ -28,7 +28,7 @@ employees.forEach(function(employee) {
 //  James
 ```
 
-### map
+## map
 *Array.prototype.map(function callback(item, [index, array]))*
 
 This method:
@@ -57,7 +57,7 @@ console.log(employeesIn30Years)
 //  ]
 ```
 
-### filter
+## filter
 *Array.prototype.filter(function callback(item, [index, array]))*
 
 This method:
@@ -82,7 +82,7 @@ console.log(employeesOver35)
 //  ]
 ```
 
-### every
+## every
 *Array.prototype.every(function callback(item, [index, array]))*
 
 This method:
@@ -115,7 +115,7 @@ submitButtonNode.addEventListener("click", function() {
 })
 ```
 
-### some
+## some
 *Array.prototype.some(function callback(item, [index, array]))*
 
 This method:
@@ -141,7 +141,7 @@ console.log(someEmployeesOlderThan40, someEmployeesOlderThan50)
 //  true false
 ```
 
-### reduce
+## reduce
 *Array.prototype.reduce(function callback(accumulator, currentValue, [index, array]), originalValue)*
 
 This method:
@@ -174,7 +174,7 @@ nodeEmployeeImagesList.innerHMTL = employees.reduce(function(list, employee) {
 }, "")
 ```
 
-### reduceRight
+## reduceRight
 *Array.prototype.reduceRight(function callback(accumulator, currentValue, [index, array]), originalValue)*
 
 This method:

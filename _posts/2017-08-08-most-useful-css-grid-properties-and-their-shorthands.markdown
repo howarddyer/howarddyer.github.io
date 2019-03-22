@@ -6,7 +6,7 @@ description: "If nothing else, ensure you learn how to use grid-template, grid-a
 label: note
 ---
 
-### Explicit grid properties
+## Explicit grid properties
 
 * grid-template-rows: \<line-names> \<track-size> ... \| none;
 * grid-template-columns: \<line-names> \<track-size> ... \| none;
@@ -62,7 +62,7 @@ label: note
 
 **Note** the bracket syntax for line names and quotation syntax for area names.  
 
-### Implicit grid properties
+## Implicit grid properties
 
 * grid-auto-rows: \<track-size> ... \| min-content \| max-content \| auto;
 * grid-auto-columns: \<track-size> ... \| min-content \| max-content \| auto;
@@ -76,7 +76,7 @@ label: note
 }
 ```
 
-### Grid item properties
+## Grid item properties
 
 * grid-row-start: \<line-name> | \<number> \| span [ \<line-name> | \<number> ] \| auto;
 * grid-row-end: \<line-name> | \<number> \| span [ \<line-name> | \<number> ] \| auto;
@@ -122,7 +122,7 @@ label: note
 }
 ```
 
-### Conclusion
+## Conclusion
 
 If nothing else, ensure you learn how to use:
 * grid-template

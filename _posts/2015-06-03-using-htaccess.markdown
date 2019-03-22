@@ -6,7 +6,7 @@ description: "Helpful notes for using .htaccess."
 label: note
 ---
 
-### Is .htaccess enabled?
+## Is .htaccess enabled?
 
 To test whether .htaccess is enabled on your web server, create two files with unique content and add the following to your .htaccess file (if the leftmost file is loaded, then .htaccess will be enabled):
 
@@ -14,7 +14,7 @@ To test whether .htaccess is enabled on your web server, create two files with u
 DirectoryIndex index_enabled.html index.html
 ```
 
-### Error pages
+## Error pages
 
 404 error — "page not found":
 
@@ -28,7 +28,7 @@ Redirect 404 /path/to/404-error-page.html
 Redirect 301 /path/to/old-page.html /path/to/new-page.html
 ```
 
-### Rewrite
+## Rewrite
 
 Redirect serves the browser a different URL to use, and the browser is aware of the redirect.
 Rewrite is a set of conditional rules that leaves the client's browser none the wiser of the rewrie (in contrast to Redirect's if EXACTLY THIS do EXACTLY THAT nature).
@@ -64,7 +64,7 @@ Set rules for search engine robots:
 </FilesMatch>
 ```
 
-### Further reading
+## Further reading
 
 <p><a href="https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag" target="_blank">Apache HTTP server</a></p>
 <p><a href="http://httpd.apache.org/docs/current/howto/htaccess.html" target="_blank">Google Robots Meta Tag</a></p>
