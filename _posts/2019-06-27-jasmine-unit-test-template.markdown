@@ -2,7 +2,7 @@
 layout: post
 title:  "Jasmine unit test template"
 date:   2019-06-27 16:00:00
-label: post
+label: note
 ---
 
 ```javascript
