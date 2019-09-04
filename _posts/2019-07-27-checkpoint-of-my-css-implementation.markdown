@@ -17,7 +17,7 @@ I write my CSS using SCSS, and implement the ITCSS (Inverted Triangle CSS) archi
 
 ## Why SCSS?
 
-The simple (and obvious) reason for using SCSS is that it provides a DRY (Don’t Repeat Yourself) and feature rich way of outputting CSS.
+The simple (and obvious) reason for using SCSS is that it provides a DRY (Don’t Repeat Yourself) and feature rich way of creating CSS.
 
 ## Why ITCSS?
 
