@@ -101,7 +101,7 @@ A Modifier is an alternative look for an Block or an Element. Modifiers are desc
     &__handle {}
     &__bell {}
     &__seat {
-        &--large
+        &--large {}
     }
     &__frame {}
     &__wheel {}
