@@ -13,9 +13,9 @@
     overflow-wrap: break-word;
     word-wrap: break-word;
 
-    -ms-word-break: break-all;
+    -ms-word-break: break-all;// sass-lint:disable-line no-misspelled-properties
     word-break: break-all;
-    word-break: break-word;
+    word-break: break-word;// sass-lint:disable-line no-duplicate-properties
 
     -ms-hyphens: auto;
     -moz-hyphens: auto;
@@ -29,7 +29,7 @@
     @if not unitless($base) { $base: strip-unit($base); }
 
     #{$property}: $value + px;
-    #{$property}: $value / $base + rem;
+    #{$property}: $value / $base + rem;// sass-lint:disable-line no-duplicate-properties
 }
 
 @mixin rotate-prefix($value) {
@@ -40,15 +40,15 @@
 
 @mixin keyframes-prefix($name) {
     @-webkit-keyframes #{$name} {
-      @content
+        @content
     }
     @-moz-keyframes #{$name} {
-      @content
+        @content
     }
     @-o-keyframes #{$name} {
-      @content
+        @content
     }
     @keyframes #{$name} {
-      @content
+        @content
     }
 }

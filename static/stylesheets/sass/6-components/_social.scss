@@ -29,19 +29,22 @@
 
         @include keyframes-prefix(rotate) {
             25% {
-                @include rotate-prefix(-10deg)
+                @include rotate-prefix(-10deg);
             }
+
             50% {
-                @include rotate-prefix(10deg)
+                @include rotate-prefix(10deg);
                 filter: blur(1px);
             }
+
             75% {
-                @include rotate-prefix(-10deg)
+                @include rotate-prefix(-10deg);
             }
         }
 
         #{ $self }--header & {
             fill: $blue-l;
+
             &:hover {
                 fill: $blue-d;
             }
@@ -49,6 +52,7 @@
 
         #{ $self }--footer & {
             fill: $white;
+
             &:hover {
                 fill: $blue-l;
             }

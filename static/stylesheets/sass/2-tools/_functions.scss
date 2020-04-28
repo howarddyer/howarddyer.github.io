@@ -4,7 +4,7 @@
 
 
 @function image($file) {
-  @return url($path-images + "/" + $file);
+    @return url($path-images + "/" + $file);
 }
 
 @function px-to-rem($pixels, $base: $site-base) {

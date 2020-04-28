@@ -6,10 +6,10 @@
 .c-post {
 
     $self: &;
-    $post-types :
-        ('--type-1', #{$blue-l}),
-        ('--type-2', #{$orange}),
-        ('--type-3', #{$green});
+    $post-types:
+    ("--type-1", #{$blue-l}),
+    ("--type-2", #{$orange}),
+    ("--type-3", #{$green});
 
     background-color: $white;
     border-color: $blue-l;
@@ -78,6 +78,7 @@
     @each $type in $post-types {
         &#{nth($type, 1)} {
             border-color: #{nth($type, 2)};
+
             &:hover,
             &:focus {
                 background: #{nth($type, 2)};

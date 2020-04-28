@@ -2,268 +2,281 @@
 // Code highlighting
 // ############################
 
-pre.highlight,
-.highlight pre {
-    background-color: $black;
-}
-
-.highlight .hll {
-    background-color: #22282a;
-}
-
-.highlight .c {
-    color: #99aa8a;
-}
-
-.highlight .err {
-    color: #960050;
-    background-color: #1e0010;
-}
-
-.highlight .k {
-    color: #93c763;
-}
-
-.highlight .l {
-    color: #ae81ff;
-}
-
-.highlight .n {
-    color: #f1f2f3;
-}
-
-.highlight .o {
-    color: #e8e2b7;
-}
-
-.highlight .p {
-    color: #f1f2f3;
-}
-
-.highlight .ch {
-    color: #99aa8a;
-}
-
-.highlight .cm {
-    color: #99aa8a;
-}
-
-.highlight .cp {
-    color: #99aa8a;
-}
-
-.highlight .cpf {
-    color: #99aa8a;
-}
-
-.highlight .c1 {
-    color: #99aa8a;
-}
-
-.highlight .cs {
-    color: #99aa8a;
-}
-
-.highlight .gd {
-    color: #e8e2b7;
-}
-
-.highlight .ge {
-    font-style: italic;
-}
-
-.highlight .gi {
-    color: #678cb1;
-}
-
-.highlight .gs {
-    font-weight: bold;
-}
-
-.highlight .gu {
-    color: #99aa8a;
-}
-
-.highlight .kc {
-    color: #93c763;
-}
-
-.highlight .kd {
-    color: #93c763;
-}
-
-.highlight .kn {
-    color: #e8e2b7;
-}
-
-.highlight .kp {
-    color: #93c763;
-}
-
-.highlight .kr {
-    color: #93c763;
-}
-
-.highlight .kt {
-    color: #83d8e1;
-}
-
-.highlight .ld {
-    color: #ec7600;
-}
-
-.highlight .m {
-    color: #ffcd22;
-}
-
-.highlight .s {
-    color: #ec7600;
-}
-
-.highlight .na {
-    color: #678cb1;
-}
-
-.highlight .nb {
-    color: #f1f2f3;
-}
-
-.highlight .nc {
-    color: #678cb1;
-}
-
-.highlight .no {
-    color: #93c763;
-}
-
-.highlight .nd {
-    color: #678cb1;
-}
-
-.highlight .ni {
-    color: #f1f2f3;
-}
-
-.highlight .ne {
-    color: #678cb1;
-}
-
-.highlight .nf {
-    color: #678cb1;
-}
-
-.highlight .nl {
-    color: #f1f2f3;
-}
-
-.highlight .nn {
-    color: #f1f2f3;
-}
-
-.highlight .nx {
-    color: #678cb1;
-}
-
-.highlight .py {
-    color: #f1f2f3;
-}
-
-.highlight .nt {
-    color: #e8e2b7;
-}
-
-.highlight .nv {
-    color: #f1f2f3;
-}
-
-.highlight .ow {
-    color: #e8e2b7;
-}
-
-.highlight .w {
-    color: #f1f2f3;
-}
-
-.highlight .mb {
-    color: #ffcd22;
-}
-
-.highlight .mf {
-    color: #ffcd22;
-}
+// sass-lint:disable no-color-literals, variable-for-property
+
+pre {
+    &.highlight {
+        background-color: $black;
+        color: $white;
+        padding: $value-m;
+        margin-bottom: $value-m;
+    }
+}
 
-.highlight .mh {
-    color: #ffcd22;
-}
-
-.highlight .mi {
-    color: #ffcd22;
-}
-
-.highlight .mo {
-    color: #ffcd22;
-}
-
-.highlight .sb {
-    color: #ec7600;
-}
-
-.highlight .sc {
-    color: #ec7600;
-}
-
-.highlight .sd {
-    color: #ec7600;
-}
-
-.highlight .s2 {
-    color: #ec7600;
-}
-
-.highlight .se {
-    color: #ae81ff;
-}
-
-.highlight .sh {
-    color: #ec7600;
-}
-
-.highlight .si {
-    color: #ec7600;
-}
-
-.highlight .sx {
-    color: #ec7600;
-}
-
-.highlight .sr {
-    color: #ec7600;
-}
-
-.highlight .s1 {
-    color: #ec7600;
-}
-
-.highlight .ss {
-    color: #ec7600;
-}
-
-.highlight .bp {
-    color: #f1f2f3;
-}
+.highlight {
 
-.highlight .vc {
-    color: #f1f2f3;
-}
+    pre {
+        background-color: $black;
+    }
 
-.highlight .vg {
-    color: #f1f2f3;
-}
+    .hll {
+        background-color: #22282a;
+    }
 
-.highlight .vi {
-    color: #f1f2f3;
-}
+    .c {
+        color: #99aa8a;
+    }
 
-.highlight .il {
-    color: #ffcd22;
+    .err {
+        color: #960050;
+        background-color: #1e0010;
+    }
+
+    .k {
+        color: #93c763;
+    }
+
+    .l {
+        color: #ae81ff;
+    }
+
+    .n {
+        color: #f1f2f3;
+    }
+
+    .o {
+        color: #e8e2b7;
+    }
+
+    .p {
+        color: #f1f2f3;
+    }
+
+    .ch {
+        color: #99aa8a;
+    }
+
+    .cm {
+        color: #99aa8a;
+    }
+
+    .cp {
+        color: #99aa8a;
+    }
+
+    .cpf {
+        color: #99aa8a;
+    }
+
+    .c1 {
+        color: #99aa8a;
+    }
+
+    .cs {
+        color: #99aa8a;
+    }
+
+    .gd {
+        color: #e8e2b7;
+    }
+
+    .ge {
+        font-style: italic;
+    }
+
+    .gi {
+        color: #678cb1;
+    }
+
+    .gs {
+        font-weight: bold;
+    }
+
+    .gu {
+        color: #99aa8a;
+    }
+
+    .kc {
+        color: #93c763;
+    }
+
+    .kd {
+        color: #93c763;
+    }
+
+    .kn {
+        color: #e8e2b7;
+    }
+
+    .kp {
+        color: #93c763;
+    }
+
+    .kr {
+        color: #93c763;
+    }
+
+    .kt {
+        color: #83d8e1;
+    }
+
+    .ld {
+        color: #ec7600;
+    }
+
+    .m {
+        color: #ffcd22;
+    }
+
+    .s {
+        color: #ec7600;
+    }
+
+    .na {
+        color: #678cb1;
+    }
+
+    .nb {
+        color: #f1f2f3;
+    }
+
+    .nc {
+        color: #678cb1;
+    }
+
+    .no {
+        color: #93c763;
+    }
+
+    .nd {
+        color: #678cb1;
+    }
+
+    .ni {
+        color: #f1f2f3;
+    }
+
+    .ne {
+        color: #678cb1;
+    }
+
+    .nf {
+        color: #678cb1;
+    }
+
+    .nl {
+        color: #f1f2f3;
+    }
+
+    .nn {
+        color: #f1f2f3;
+    }
+
+    .nx {
+        color: #678cb1;
+    }
+
+    .py {
+        color: #f1f2f3;
+    }
+
+    .nt {
+        color: #e8e2b7;
+    }
+
+    .nv {
+        color: #f1f2f3;
+    }
+
+    .ow {
+        color: #e8e2b7;
+    }
+
+    .w {
+        color: #f1f2f3;
+    }
+
+    .mb {
+        color: #ffcd22;
+    }
+
+    .mf {
+        color: #ffcd22;
+    }
+
+    .mh {
+        color: #ffcd22;
+    }
+
+    .mi {
+        color: #ffcd22;
+    }
+
+    .mo {
+        color: #ffcd22;
+    }
+
+    .sb {
+        color: #ec7600;
+    }
+
+    .sc {
+        color: #ec7600;
+    }
+
+    .sd {
+        color: #ec7600;
+    }
+
+    .s2 {
+        color: #ec7600;
+    }
+
+    .se {
+        color: #ae81ff;
+    }
+
+    .sh {
+        color: #ec7600;
+    }
+
+    .si {
+        color: #ec7600;
+    }
+
+    .sx {
+        color: #ec7600;
+    }
+
+    .sr {
+        color: #ec7600;
+    }
+
+    .s1 {
+        color: #ec7600;
+    }
+
+    .ss {
+        color: #ec7600;
+    }
+
+    .bp {
+        color: #f1f2f3;
+    }
+
+    .vc {
+        color: #f1f2f3;
+    }
+
+    .vg {
+        color: #f1f2f3;
+    }
+
+    .vi {
+        color: #f1f2f3;
+    }
+
+    .il {
+        color: #ffcd22;
+    }
 }
