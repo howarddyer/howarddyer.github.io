@@ -12,7 +12,7 @@ label: note
 ```
 
 ```css
-// sass-lint: disable rule-name
+// sass-lint:disable rule-name
 ```
 
 
@@ -23,7 +23,7 @@ label: note
 ```
 
 ```css
-// sass-lint: disable-line rule-name
+// sass-lint:disable-line rule-name
 ```
 
 ## Disable rule-name on next line
@@ -35,7 +35,7 @@ label: note
 ## Disable rule-name in current block
 
 ```css
-// sass-lint: disable-block rule-name
+// sass-lint:disable-block rule-name
 ```
 
 ## Disable all rules
@@ -45,7 +45,7 @@ label: note
 ```
 
 ```css
-// sass-lint: disable-all
+// sass-lint:disable-all
 ```
 
 ## Enable all rules
@@ -55,5 +55,5 @@ label: note
 ```
 
 ```css
-// sass-lint: enable-all
+// sass-lint:enable-all
 ```
