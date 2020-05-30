@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "What Happens in a BFC, Stays in a BFC!"
+title:  "What Happens In A BFC, Stays In A BFC!"
 date:   2018-09-21 22:00:00
 description: "The Block Formatting Context (BFC) in CSS is a concept that many developers can’t name or describe, but know all about."
 label: post

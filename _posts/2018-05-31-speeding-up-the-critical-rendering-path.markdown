@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Speeding Up the Critical Rendering Path"
+title:  "Speeding Up The Critical Rendering Path"
 date:   2018-05-31 20:00:00
 description: "The CRP is the steps that a browsers need to take before any visual change can be shown to the user. The question is how can we optimise the CRP to speed up the time to first render?"
 label: post

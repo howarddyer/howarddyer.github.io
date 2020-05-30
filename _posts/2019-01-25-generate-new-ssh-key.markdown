@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Generate a New SSH Key"
+title:  "Generate A New SSH Key"
 date:   2019-01-25 16:30:00
 description:
   nested:

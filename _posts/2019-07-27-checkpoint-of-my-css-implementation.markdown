@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A checkpoint of my current approach to CSS"
+title:  "A Checkpoint Of My Current Approach To CSS"
 date:   2019-07-26 22:00:00
 label: post
 ---

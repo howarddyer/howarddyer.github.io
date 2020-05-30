@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Browser Rendering or: How I Learned to Stop Wondering and Understand the CSSOM"
+title:  "Browser Rendering Or: How I Learned To Stop Wondering And Understand The CSSOM"
 date:   2018-04-25 17:00:00
 description: "A brief documentation of the steps that the browser takes to render the CSSOM, to better understand how/why the CSSOM plays such a vital role in the rendering of content on the web."
 label: post

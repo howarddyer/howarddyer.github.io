@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Be Wary of Chasing the New Hotness"
+title:  "Be Wary Of Chasing The New Hotness"
 date:   2017-09-15 13:33:00
 description: ""
 label: quote

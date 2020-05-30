@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Toggling rules in ESLint and Sass Lint"
+title:  "Toggling Rules In ESLint And Sass Lint"
 date:   2019-10-17 17:00:00
 label: note
 ---

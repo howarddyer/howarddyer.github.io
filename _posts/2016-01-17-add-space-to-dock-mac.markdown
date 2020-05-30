@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Add a Space to the Dock in Mac OS"
+title:  "Add A Space To The Dock In Mac OS"
 date:   2016-01-17 17:54:56
 description:
   nested:

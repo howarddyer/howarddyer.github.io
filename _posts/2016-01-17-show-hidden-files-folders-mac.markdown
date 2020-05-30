@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Show Hidden Files and Folders in Mac OS"
+title:  "Show Hidden Files And Folders In Mac OS"
 date:   2016-01-17 17:34:56
 description:
   nested:

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How I use BEM"
+title:  "How I Use BEM"
 date:   2019-08-30 19:00:00
 label: post
 description: BEM is a naming convention that can be used to break a website’s CSS into super useful, reusable components.

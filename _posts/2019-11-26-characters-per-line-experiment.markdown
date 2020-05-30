@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Characters Per Line experiment"
+title:  "Characters Per Line Experiment"
 date:   2019-11-26 17:00:00
 label: post
 description: Whilst researching Accessibility topics, I came across the discussion of considering line length when laying out text. The general consensus being that there's a sweet spot between too many characters and too few characters.
@@ -90,11 +90,13 @@ I don't intend on using the mixin in production sites, nor do I recommend this. 
 
 ## Further reading
 
-* https://meyerweb.com/eric/thoughts/2018/06/28/what-is-the-css-ch-unit/
+<a href="https://meyerweb.com/eric/thoughts/2018/06/28/what-is-the-css-ch-unit/" target="_blank">What is the CSS ‘ch’ Unit? | Meyer Web</a>
 
 
 ## Resources
 
-* https://docs.google.com/presentation/d/1V8MJ7saDdzAOqbPXYFTm2uMkswI223mkXf5Zm9CgHk8/edit?usp=sharing
-* https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/
-* https://blog.prototypr.io/how-to-set-perfect-line-lengths-for-the-web-528f08f8b344
+<a href="https://docs.google.com/presentation/d/1V8MJ7saDdzAOqbPXYFTm2uMkswI223mkXf5Zm9CgHk8/edit?usp=sharing" target="_blank">Slides from the "Characters Per Line Experiment" presentation</a>
+
+<a href="https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/" target="_blank">Size Matters: Balancing Line Length And Font Size In Responsive Web Design by Laura Franz | Smashing Magazine</a>
+
+<a href="https://blog.prototypr.io/how-to-set-perfect-line-lengths-for-the-web-528f08f8b344" target="_blank">How to Set Perfect Line Lengths for Your Webpages by Simon Li | Prototypr.io</a>

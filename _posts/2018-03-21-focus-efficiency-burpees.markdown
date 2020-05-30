@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Focus, Efficiency and Burpees"
+title:  "Focus, Efficiency And Burpees"
 date:   2018-03-23 1:40:00
 description: "I had a revelation the other day to do with how my mind affects my motivation, for better and/or for worse. I figured that the mindset that I realised could be helpful in many different areas, including how I approach my work."
 label: post

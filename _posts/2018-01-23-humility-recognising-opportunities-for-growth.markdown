@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Humility Is Recognising Your Opportunities for Growth"
+title:  "Humility Is Recognising Your Opportunities For Growth"
 date:   2018-01-23 17:25:00
 label: quote
 ---

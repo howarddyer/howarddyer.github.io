@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Improving the Render"
+title:  "Improving The Render"
 date:   2018-07-16 13:00:00
 description: "I've blogged previously about how the browser goes about rendering content, and separately about how we can improve the path to content that is critical for the render. The final piece of this puzzle is to explore how to make renders more performant."
 label: post

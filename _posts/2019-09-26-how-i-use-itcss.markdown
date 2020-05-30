@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How I use ITCSS"
+title:  "How I Use ITCSS"
 date:   2019-09-26 16:00:00
 label: post
 description: ITCSS is a CSS framework that helps keep a project's stylesheets organised so that there are less issues to do with style collisions, file bloat and redundant styles.
@@ -156,4 +156,4 @@ $u-text-underline {text-decoration: underline;}
 ```
 
 ## Further reading
-<a href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/" target="_blank">ITCSS: Scalable and Maintainable CSS Architecture</a>
+<a href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/" target="_blank">ITCSS: Scalable and Maintainable CSS Architecture by Lubos Kmetko | xfive</a>

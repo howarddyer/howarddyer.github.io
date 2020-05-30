@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Recap of Flexbox"
+title:  "Flexbox Recap"
 date:   2018-11-10 17:00:00
 label: note
 ---

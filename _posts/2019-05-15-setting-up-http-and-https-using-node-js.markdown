@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Setting up HTTP and HTTPS using Node.JS"
+title:  "Setting Up HTTP And HTTPS Using Node.JS"
 date:   2019-05-15 08:00:00
 label: note
 ---

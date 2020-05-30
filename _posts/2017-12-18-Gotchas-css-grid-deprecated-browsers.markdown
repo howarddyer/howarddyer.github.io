@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Gotchas When Implementing CSS Grid in Deprecated Browsers"
+title:  "Gotchas When Implementing CSS Grid In Deprecated Browsers"
 date:   2017-12-19 20:50:00
 description: "CSS Grid is a modern technology for modern browsers. In an ideal world we would only develop for modern browsers, but there are (unfortunately) still many instances that call for the continued support of deprecated browsers."
 label: note

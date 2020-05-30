@@ -20,4 +20,4 @@ function writeCssVariable (elementNode, customProperty, value){
 
 ## Resources
 
-* https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/
+<a href="https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/" target="_blank">It’s Time To Start Using CSS Custom Properties by Serg Hospodarets | Smashing Magazine</a>

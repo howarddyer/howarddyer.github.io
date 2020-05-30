@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jasmine unit test template"
+title:  "Jasmine Unit Test Template"
 date:   2019-06-27 16:00:00
 label: note
 ---

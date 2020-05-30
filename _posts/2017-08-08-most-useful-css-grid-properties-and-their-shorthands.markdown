@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Most Useful CSS Grid Properties and Their Shorthands"
+title:  "Most Useful CSS Grid Properties And Their Shorthands"
 date:   2017-08-09 19:31:00
 description: "If nothing else, ensure you learn how to use grid-template, grid-area and grid-gap."
 label: note

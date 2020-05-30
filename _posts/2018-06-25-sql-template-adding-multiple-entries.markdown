@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SQL template for adding multiple entries"
+title:  "SQL Template For Adding Multiple Entries"
 date:   2018-06-25 09:00:00
 description: "A SQL schema script template for adding multiple entries to table (if not currently present)."
 label: note
