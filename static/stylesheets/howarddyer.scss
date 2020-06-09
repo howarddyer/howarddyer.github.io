@@ -1,31 +1,31 @@
-@import "1-settings/colours";
-@import "1-settings/global";
-@import "1-settings/images";
-@import "1-settings/typography";
-@import "1-settings/values";
+@import "sass/1-settings/colours";
+@import "sass/1-settings/global";
+@import "sass/1-settings/images";
+@import "sass/1-settings/typography";
+@import "sass/1-settings/values";
 
-@import "2-tools/functions";
-@import "2-tools/mixins";
+@import "sass/2-tools/functions";
+@import "sass/2-tools/mixins";
 
-@import "3-generic/reset";
+@import "sass/3-generic/reset";
 
-@import "4-elements/base";
-@import "4-elements/images";
-@import "4-elements/links";
-@import "4-elements/table";
-@import "4-elements/typography";
+@import "sass/4-elements/base";
+@import "sass/4-elements/images";
+@import "sass/4-elements/links";
+@import "sass/4-elements/table";
+@import "sass/4-elements/typography";
 
-@import "5-objects/wrapper";
+@import "sass/5-objects/wrapper";
 
-@import "6-components/buttons";
-@import "6-components/footer";
-@import "6-components/header";
-@import "6-components/logo";
-@import "6-components/posts";
-@import "6-components/social";
-@import "6-components/tech-specs";
+@import "sass/6-components/buttons";
+@import "sass/6-components/footer";
+@import "sass/6-components/header";
+@import "sass/6-components/logo";
+@import "sass/6-components/posts";
+@import "sass/6-components/social";
+@import "sass/6-components/tech-specs";
 
-@import "7-overrides/code-highlighting";
+@import "sass/7-overrides/code-highlighting";
 
-@import "8-utilities/display";
-@import "8-utilities/space";
+@import "sass/8-utilities/display";
+@import "sass/8-utilities/space";
