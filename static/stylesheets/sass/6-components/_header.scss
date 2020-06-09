@@ -4,7 +4,7 @@
 
 
 .c-header {
-    background-image: $c-header-image;
+    background-image: image($c-header-image);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;

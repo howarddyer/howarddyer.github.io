@@ -10,4 +10,4 @@ $image-geometric: "image-geometric.svg";
 
 // Uses
 
-$c-header-image: #{image($image-geometric)};
+$c-header-image: $image-geometric;

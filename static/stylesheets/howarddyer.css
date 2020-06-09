@@ -103,7 +103,7 @@ code {
   text-align: center; }
 
 .c-header {
-  background-image: image("image-geometric.svg");
+  background-image: url("/static/images/image-geometric.svg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
